@@ -1,0 +1,31 @@
+
+
+
+.list-unstyled{
+ list-style: none;
+ display: flex;
+}
+.about-list{
+    list-style: none;
+    padding-left: 0;
+    gap: 10px;
+}
+.about-list li{
+    width: calc((100% - 10px) / 2);
+}
+.about-list li:first-child:before{
+    content: "Name: ";
+    font-weight: 500;
+}
+.about-list li:nth-child(2):before{
+    content: "Email: ";
+    font-weight: 500;
+}
+.about-list li:nth-child(3):before{
+    content: "Location: ";
+    font-weight: 500;
+}
+.about-list li:nth-child(4):before{
+    content: "Phone no: ";
+    font-weight: 500;
+}
