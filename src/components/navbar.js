@@ -1,5 +1,6 @@
 import React from "react";
-
+import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineFileDownload } from "react-icons/md";
 const navbar = () => {
   return (
     <header>
@@ -14,8 +15,11 @@ const navbar = () => {
           </ul>
         </nav>
         <div className="d-flex gap-3">
-          <p>shaneenriquez50@gmail.com</p>
-          <button className="btn btn-primary">Download CV</button>
+          <p>
+            <MdOutlineEmail />
+            shaneenriquez50@gmail.com
+          </p>
+          <button className="btn btn-primary">Download CV <MdOutlineFileDownload/></button>
         </div>
       </div>
     </header>
