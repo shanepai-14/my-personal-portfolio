@@ -5,6 +5,7 @@ import Vscode from "../images/icons/vscode.svg";
 import Javascript from "../images/icons/logo-javascript.svg";
 import Reactlogo from "../images/icons/react-2.svg";
 import Flutter from "../images/icons/flutter-logo.svg";
+import Downloadcv from "./downloadcv";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 const hero = () => {
@@ -26,9 +27,7 @@ const hero = () => {
                 <button className="contactbtn">Contact Me <FiPhone /></button>
               </li>
               <li>
-                <button className="downloadcv">
-                  Download CV <MdOutlineFileDownload />
-                </button>
+              <Downloadcv />
               </li>
             </ul>
           </div>
@@ -42,7 +41,7 @@ const hero = () => {
             <img
               src={HeroImage}
               width={"100%"}
-              className="object-fit-cover h-100"
+              className="object-fit-cover h-100 heroimage"
             ></img>
           </div>
         </div>

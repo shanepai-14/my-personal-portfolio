@@ -3,11 +3,12 @@
 :root {
   --highlight: #f9ce69;
   --darkblue: #4741a6;
-  --lightblue :#9bbbfc;
+  --lightblue: #9bbbfc;
   --blue: #3664f4;
-  --white:#ffffff;
-  --gray:#949fb0;
-  
+  --white: #ffffff;
+  --gray: #949fb0;
+  --darkgray:rgb(94, 94, 94);
+  --black :#000000;
 }
 
 * {
@@ -46,18 +47,22 @@ header ul {
   width: calc((100% - 10px) / 2);
 }
 .about-list li:first-child:before {
+  color:var(--black);
   content: "Name: ";
   font-weight: 500;
 }
 .about-list li:nth-child(2):before {
+  color:var(--black);
   content: "Email: ";
   font-weight: 500;
 }
 .about-list li:nth-child(3):before {
+  color:var(--black);
   content: "Location: ";
   font-weight: 500;
 }
 .about-list li:nth-child(4):before {
+  color:var(--black);
   content: "Phone no: ";
   font-weight: 500;
 }
@@ -78,49 +83,97 @@ header ul {
   background-color: var(--highlight);
   color: black;
 }
-.contactbtn{
+.contactbtn {
   padding: 10px 12px 10px 12px;
   border: none;
   border-radius: 2px;
   background-color: var(--blue);
   color: var(--white);
 }
-.webdev{
- color: var(--blue);
-}
-.shanepai strong{
+.webdev {
   color: var(--blue);
 }
-.hero p{
+.shanepai strong {
+  color: var(--blue);
+}
+.hero p {
   color: var(--gray);
 }
-.hero-icons{
- width: 50px;
- padding: 10px;
- background:var(--white);
-
+.hero-icons {
+  width: 50px;
+  padding: 10px;
+  background: var(--white);
 }
-.hero-icons:nth-child(1){
+.hero-icons:nth-child(1) {
   top: 50%;
   left: 8%;
 }
-.hero-icons:nth-child(2){
+.hero-icons:nth-child(2) {
   top: 42%;
   left: 76%;
-
 }
-.hero-icons:nth-child(3){
+.hero-icons:nth-child(3) {
   top: 25%;
   left: 65%;
   width: 35px;
-    padding: 0;
+  padding: 0;
 }
-.hero-icons:nth-child(4){
+.hero-icons:nth-child(4) {
   top: 19%;
   left: 92%;
 }
-.hero-icons:nth-child(5){
+.hero-icons:nth-child(5) {
   top: 35%;
   left: 15%;
   width: 45px;
+}
+.heroimage {
+  -webkit-filter: drop-shadow(6px 0px 13px #c7c7c7);
+  filter: drop-shadow(6px 0px 13px #c7c7c7);
+}
+.header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.header.scrolled {
+  z-index: 10;
+  background-color: var(--white); /* Background color when scrolled */
+}
+.myself {
+  height: 100vh;
+}
+.lara:hover {
+  fill: red;
+  transition: all ease-in-out 250ms;
+}
+.about-sec {
+  background-image: url("./images/about4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-sec h3{
+  color: var(--blue);
+}
+.about-sec p{
+  color: var(--darkgray);
+}
+.about-sec ul li{
+  color: var(--darkgray);
+}
+.project-sec ul li{
+  width: calc((100% - 32px) /3);
+  min-width: 280px;
+}
+.card-item{
+  transition: .3s;
+  overflow: hidden;
+}
+.card-item:hover{
+  transform: translateY(-10px);
+}
+.card-item div img {
+  transition: 5s;
+}
+.card-item div:hover img {
+  transform: scale(1.5);
 }

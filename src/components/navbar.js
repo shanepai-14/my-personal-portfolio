@@ -1,10 +1,30 @@
-import React from "react";
+import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
+import React, { useState, useEffect } from 'react';
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const navbar = () => {
+const Navbar = () => {
+ 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <header className="pt-3">
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container d-flex justify-content-between p-3 align-items-center">
         <p className="h4 shanepai">
           <strong>Shanepai</strong> <span>先輩</span>
@@ -22,13 +42,11 @@ const navbar = () => {
             <MdOutlineEmail fill="#3664f4" size={30}/>
              {" "}shaneenriquez50@gmail.com
           </p>
-          <button className="downloadcv">
-            Download CV <MdOutlineFileDownload />
-          </button>
+       <Downloadcv />
         </div>
       </div>
     </header>
   );
 };
 
-export default navbar;
+export default Navbar;
