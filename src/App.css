@@ -1,12 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --highlight: #f9ce69;
+  --darkblue: #4741a6;
+  --lightblue :#9bbbfc;
+  --blue: #3664f4;
+  --white:#ffffff;
+  --gray:#949fb0;
+  
+}
+
 * {
   font-family: "Work Sans", sans-serif;
 }
+
+.shanepai span {
+  color: var(--highlight);
+}
+
 body {
   /* font-family: "Work Sans", sans-serif !important; */
 }
-
+header {
+  position: fixed;
+  width: 100%;
+}
+header ul {
+  font-weight: 600;
+}
+.hero {
+  background-image: url("./images/herobg.svg");
+  background-size: cover;
+  background-position: center;
+}
 .list-unstyled {
   list-style: none;
   display: flex;
@@ -35,6 +61,66 @@ body {
   content: "Phone no: ";
   font-weight: 500;
 }
+
 .educ-list {
-  list-style-type: "#️⃣";
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+  position: relative;
+  gap: 20px;
+}
+
+.downloadcv {
+  padding: 10px 12px 10px 12px;
+  /* border: 1px solid rgb(167, 167, 167); */
+  border: none;
+  border-radius: 2px;
+  background-color: var(--highlight);
+  color: black;
+}
+.contactbtn{
+  padding: 10px 12px 10px 12px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.webdev{
+ color: var(--blue);
+}
+.shanepai strong{
+  color: var(--blue);
+}
+.hero p{
+  color: var(--gray);
+}
+.hero-icons{
+ width: 50px;
+ padding: 10px;
+ background:var(--white);
+
+}
+.hero-icons:nth-child(1){
+  top: 50%;
+  left: 8%;
+}
+.hero-icons:nth-child(2){
+  top: 42%;
+  left: 76%;
+
+}
+.hero-icons:nth-child(3){
+  top: 25%;
+  left: 65%;
+  width: 35px;
+    padding: 0;
+}
+.hero-icons:nth-child(4){
+  top: 19%;
+  left: 92%;
+}
+.hero-icons:nth-child(5){
+  top: 35%;
+  left: 15%;
+  width: 45px;
 }
