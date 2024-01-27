@@ -9,10 +9,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
+      const isScrolled = window.scrollY > 100;
+      setScrolled(isScrolled);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -21,10 +19,10 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrolled]);
+  }, []);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header`} style={{ backgroundColor: scrolled ? '#f8f9fd' : 'transparent' ,zIndex: "10"}}>
       <div className="container d-flex justify-content-between p-3 align-items-center">
         <p className="h4 shanepai">
           <strong>Shanepai</strong> <span>先輩</span>
