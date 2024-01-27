@@ -1,17 +1,7 @@
 import React from "react";
-import { FaJava, FaLaravel } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaBootstrap } from "react-icons/fa6";
-import { FaPhp } from "react-icons/fa6";
-import { FaReact } from "react-icons/fa";
-import { SiFlutter } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { SiJquery } from "react-icons/si";
 import { Github } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
+import Techstack from "./tech-stack-button/stackButton";
 import { FaRegEye } from "react-icons/fa6";
 const ProjectCard = ({ project }) => {
   return (
@@ -33,30 +23,26 @@ const ProjectCard = ({ project }) => {
             className="live-eye position-absolute  w-100 text-center"
             style={{ height: "30px" }}
           >
-            <FaRegEye />
+          <a target="_blank" href={project.liveUrl}>  <FaRegEye /></a>
           </div>
         </div>
         <Card.Body className="">
           <Card.Title className="d-flex justify-content-between">
             {project.title}
             <span>
-              <Github className="github" />
+            <a href={project.githubUrl} target="_blank">  <Github className="github" /></a>
             </span>
           </Card.Title>
 
-          <Card.Text></Card.Text>
-          <button
-            className="btn rounded-pill border-0 small mx-1"
-            style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
-          >
-            <FaLaravel /> Laravel
-          </button>
-          <button
-            className="btn rounded-pill border-0"
-            style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
-          >
-            <FaJava /> Javascript
-          </button>
+       
+          { project.stack.length > 0 ? (
+            <>
+              {project.stack.map((techstack) => (
+                <Techstack techstack={techstack} />
+              
+              ))}
+            </>
+          ) : ""}
         </Card.Body>
       </Card>
     </li>
