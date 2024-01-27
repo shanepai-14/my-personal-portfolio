@@ -12,7 +12,7 @@ import { SiMysql } from "react-icons/si";
 import { SiJquery } from "react-icons/si";
 
 const StackButton = ({ techstack }) => {
-
+  const capitalizedText = techstack.charAt(0).toUpperCase() + techstack .slice(1);
     const getIcon = () => {
         switch (techstack) {
           case "html":
@@ -47,7 +47,7 @@ const StackButton = ({ techstack }) => {
         className="btn rounded-pill border-0 me-1"
         style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
       >
-         {getIcon()} {techstack}
+         {getIcon()} {capitalizedText}
       </button>
       
     );

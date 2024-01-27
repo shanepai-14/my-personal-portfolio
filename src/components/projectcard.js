@@ -19,18 +19,21 @@ const ProjectCard = ({ project }) => {
             // backgroundColor: "#F5F5F5",
             // objectFit: "cover",
           />
-          <div
-            className="live-eye position-absolute  w-100 text-center"
-            style={{ height: "30px" }}
-          >
-          <a target="_blank" rel="noreferrer" href={project.liveUrl}>  <FaRegEye /></a>
-          </div>
+       {project.liveUrl !== "" ? (
+         <div
+         className="live-eye position-absolute  w-100 text-center"
+         style={{ height: "30px" }}
+       >
+       <a target="_blank" rel="noreferrer"  className="text-decoration-none" href={project.liveUrl}>  <FaRegEye /> Live Preview </a>
+       </div>
+       ): ""}
+      
         </div>
         <Card.Body className="">
           <Card.Title className="d-flex justify-content-between">
             {project.title}
             <span>
-            <a href={project.githubUrl} rel="noreferrer" target="_blank">  <Github className="github" /></a>
+            <a style={{ color:"black"}} href={project.githubUrl} rel="noreferrer" target="_blank"> <Github className="github" /></a>
             </span>
           </Card.Title>
 
