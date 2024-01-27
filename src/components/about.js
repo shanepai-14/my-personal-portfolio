@@ -7,6 +7,7 @@ import { Linkedin } from "react-bootstrap-icons";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi2";
 
 
+
 const about = () => {
   return (
     <section className="about-sec">

@@ -12,50 +12,53 @@ import { SiMysql } from "react-icons/si";
 import { SiJquery } from "react-icons/si";
 import { Github } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
-import ProjHris from "../images/hris-login.png";
-
-const ProjectCard = () => {
+import { FaRegEye } from "react-icons/fa6";
+const ProjectCard = ({ project }) => {
   return (
-    <li className="card-item shadow ">
-    <Card
-      style={{ height: "24.3rem", backgroundColor: "#F5F5F5" }}
-      className="border-0"
-    >
-      <div className="overflow-hidden">
-        <Card.Img
-          variant="top"
-          src={ProjHris}
-          style={{
-            width: "100%",
-            height: "18.3rem",
-            backgroundColor: "#F5F5F5",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-      <Card.Body className="">
-        <Card.Title className="d-flex justify-content-between">
-          HRIS{" "}
-          <span>
-            <Github />
-          </span>
-        </Card.Title>
+    <li className="card-item shadow">
+      <Card
+        style={{  backgroundColor: "#F5F5F5" }}
+        className="border-0"
+      >
+        <div className="overflow-hidden position-relative">
+          <Card.Img
+            variant="top"
+            src={project.imageurl}
+            // width: "100%",
+            // height: "18.3rem",
+            // backgroundColor: "#F5F5F5",
+            // objectFit: "cover",
+          />
+          <div
+            className="live-eye position-absolute  w-100 text-center"
+            style={{ height: "30px" }}
+          >
+            <FaRegEye />
+          </div>
+        </div>
+        <Card.Body className="">
+          <Card.Title className="d-flex justify-content-between">
+            {project.title}
+            <span>
+              <Github className="github" />
+            </span>
+          </Card.Title>
 
-        <Card.Text></Card.Text>
-        <button
-          className="btn rounded-pill border-0 small mx-1"
-          style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
-        >
-          <FaLaravel /> Laravel
-        </button>
-        <button
-          className="btn rounded-pill border-0"
-          style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
-        >
-          <FaJava /> Javascript
-        </button>
-      </Card.Body>
-    </Card>
+          <Card.Text></Card.Text>
+          <button
+            className="btn rounded-pill border-0 small mx-1"
+            style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
+          >
+            <FaLaravel /> Laravel
+          </button>
+          <button
+            className="btn rounded-pill border-0"
+            style={{ backgroundColor: "#D5D5D5", fontSize: "10px" }}
+          >
+            <FaJava /> Javascript
+          </button>
+        </Card.Body>
+      </Card>
     </li>
   );
 };

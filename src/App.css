@@ -7,8 +7,8 @@
   --blue: #3664f4;
   --white: #ffffff;
   --gray: #949fb0;
-  --darkgray:rgb(94, 94, 94);
-  --black :#000000;
+  --darkgray: rgb(94, 94, 94);
+  --black: #000000;
 }
 
 * {
@@ -47,22 +47,22 @@ header ul {
   width: calc((100% - 10px) / 2);
 }
 .about-list li:first-child:before {
-  color:var(--black);
+  color: var(--black);
   content: "Name: ";
   font-weight: 500;
 }
 .about-list li:nth-child(2):before {
-  color:var(--black);
+  color: var(--black);
   content: "Email: ";
   font-weight: 500;
 }
 .about-list li:nth-child(3):before {
-  color:var(--black);
+  color: var(--black);
   content: "Location: ";
   font-weight: 500;
 }
 .about-list li:nth-child(4):before {
-  color:var(--black);
+  color: var(--black);
   content: "Phone no: ";
   font-weight: 500;
 }
@@ -151,29 +151,48 @@ header ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.about-sec h3{
+.about-sec h3 {
   color: var(--blue);
 }
-.about-sec p{
+.about-sec p {
   color: var(--darkgray);
 }
-.about-sec ul li{
+.about-sec ul li {
   color: var(--darkgray);
 }
-.project-sec ul li{
-  width: calc((100% - 32px) /3);
+.project-sec ul li {
+  width: calc((100% - 32px) / 3);
   min-width: 280px;
 }
-.card-item{
-  transition: .3s;
+.card-item {
+  transition: 0.3s;
   overflow: hidden;
 }
-.card-item:hover{
+.card-item:hover {
   transform: translateY(-10px);
 }
 .card-item div img {
   transition: 5s;
 }
+.live-eye {
+  background-color: rgba(255, 255, 255, 0.877);
+  display: none;
+  transition: all 5s ;
+  bottom: 0px;
+}
+.card-item div:hover .live-eye {
+  display: block;
+}
 .card-item div:hover img {
   transform: scale(1.5);
+}
+.github{
+  transition: 0.3s;
+}
+.github:hover{
+  transform: scale(1.5);
+}
+.card-img-top{
+  height: 180px;
+  object-fit: contain;
 }
