@@ -14,7 +14,7 @@ const about = () => {
       <div className="container p-5">
         <div className="row myself">
           <div className="col">
-            <img src={AboutImage} width={"70%"} className="shadow"></img>
+            <img src={AboutImage} width={"70%"} className=""></img>
           </div>
           <div className="col d-flex flex-column justify-content-center">
             <h3>ABOUT ME</h3>
@@ -39,7 +39,7 @@ const about = () => {
               <strong>
               <HiOutlineChevronDoubleRight />
               </strong>
-              <p className="mb-0">Contact me</p>
+              <p className="mb-0">Follow me</p>
               <ul className="list-unstyled justify-content-between mb-0 gap-5">
                 <li>
                   <Github color="black" size={28} />

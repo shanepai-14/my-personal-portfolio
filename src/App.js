@@ -5,7 +5,7 @@ import About from "./components/about";
 import Project from "./components/projects";
 import Education from "./components/education";
 import TechStack from "./components/techstack";
-
+import Footer from "./components/footer";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 const App = () => {
@@ -14,9 +14,10 @@ const App = () => {
       <NavBar />
       <Hero />
       <About />
+      <Education />
       <TechStack />
-      {/* <Education /> */}
       <Project />
+      <Footer/>
     </div>
   );
 };

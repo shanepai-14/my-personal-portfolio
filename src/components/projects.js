@@ -90,10 +90,10 @@ const projects = () => {
   return (
     <section className="project-sec">
       <div
-        className="container rounded p-5"
+        className="container rounded p-5 shadow-sm"
         style={{ backgroundColor: "#F6F6F6" }}
       >
-        <h1 className="text-center">Projects</h1>
+        <h1 className="text-center mb-5">Projects</h1>
         <ul className="list-unstyled justify-content-center gap-3 flex-wrap">
           {projects_list?.result.length > 0 ? (
             <>
@@ -103,7 +103,7 @@ const projects = () => {
             </>
           ) : (
             <div className="empty">
-              <h2>No Porject Found</h2>
+              <h2>No Project Found</h2>
             </div>
           )}
         </ul>

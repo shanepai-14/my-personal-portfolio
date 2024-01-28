@@ -14,7 +14,7 @@ import { SiJquery } from "react-icons/si";
 
 const TechStack = () => {
   return (
-    <section>
+    <section className="tect-stack">
       <div className="container">
         <div className="w-100 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
           <h1 className="mb-5">Tech Stack</h1>

@@ -9,6 +9,7 @@
   --gray: #949fb0;
   --darkgray: rgb(94, 94, 94);
   --black: #000000;
+  --ligthgray: rgb(246, 246, 246);
 }
 
 * {
@@ -144,6 +145,7 @@ header ul {
   color: var(--gray);
 }
 .hero-icons {
+  z-index: 3;
   width: 50px;
   padding: 10px;
   background: var(--white);
@@ -206,6 +208,9 @@ header ul {
 .about-sec ul li {
   color: var(--darkgray);
 }
+.project-sec{
+  margin-bottom: 200px;
+}
 .project-sec ul li {
   width: calc((100% - 32px) / 3);
   min-width: 280px;
@@ -241,4 +246,55 @@ header ul {
 .card-img-top{
   height: 180px;
   object-fit: contain;
+}
+.contact-me{
+  top: -150px;
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 2px;
+  border: 1px solid var(--blue);
+  box-shadow: 1rem 1rem 0px var(--blue);
+}
+footer{
+  background-color: var(--highlight);
+
+}
+.contact-item{
+  background-color: var(--ligthgray);
+  border-radius: 2px;
+}
+.contact-details{
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer-list{
+  list-style: none;
+}
+.about-sec img {
+  border-radius: 2px;
+  border: 2px solid var(--highlight);
+  box-shadow: 1rem 1rem 0px var(--highlight);
+  transition: all 250ms ease-in-out;
+}
+.about-sec img:hover{
+  border: 4px solid var(--black);
+  box-shadow: none;
+}
+.hero-icons:hover{
+ 
+  scale: 1.5;
+ 
+}
+.educ-h3{
+  color: var(--blue);
+}
+.educ {
+  background-image: url(./images/educ-bg.svg);
+  background-size: cover;
+}
+.project-sec h1{
+  color: var(--blue);
+}
+.tect-stack h1{
+  color: var(--blue);
 }
