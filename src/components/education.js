@@ -11,9 +11,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const education = () => {
   return (
-    <section className="educ">
+    <section className="educ pb-5">
 
-      <div className="container ">
+      <div className="container">
         <div className="row">
           <div className="col-6 ">
             <Swiper
@@ -45,38 +45,27 @@ const education = () => {
           </div>
           <div className="col p-3">
       
-            <h3 className="educ-h3">My Education</h3>
-            <ul className="educ-list mb-5">
-              <li className="  mb-4">
-                <span>
-                  <p>
-                    <strong>Davao Vision College</strong>(2022-2023)
-                  </p>
-                </span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  a libero urna. Pellentesque ac odio purus. Integer finibus
-                  mauris a ligula interdum auctor. Vivamus vestibulum pharetra
-                  odio, et consectetur nunc consectetur a.
+            <h3 className="educ-h3 mb-5">My Education</h3>
+            <ul className="educ-list d-flex flex-column justify-content-center">
+              <li className="  mb-4 p-2 ">
+               
+  
+                    <strong className="title"> Davao Vision College (2022-2023)</strong> 
+      
+            
+                <p className="course">
+                 Bachelor Of Science In Information Technology
                 </p>
-                <button className="btn btn-primary rounded-pill">
-                  Diploma in Information Tech
-                </button>
               </li>
-              <li className="mb-4">
+              <li className="mb-4 p-2 ">
                 {" "}
-                <p>
-                  <strong>Davao Vision College</strong>(2022-2023)
+       
+                  <strong className="title"> F. Bustamante National Highschool</strong> (2017-2018)
+       
+            
+                <p className="course">
+                Technical-Vocational Livelihood In Computer Systems Servicing
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  a libero urna. Pellentesque ac odio purus. Integer finibus
-                  mauris a ligula interdum auctor. Vivamus vestibulum pharetra
-                  odio, et consectetur nunc consectetur a.
-                </p>
-                <button className="btn btn-primary rounded-pill">
-                  Diploma in Information Tech
-                </button>
               </li>
             </ul>
           </div>
