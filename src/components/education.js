@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y,Parallax ,Autoplay} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { GiGraduateCap } from "react-icons/gi";
 import Dcit from "../images/certifications/dict.jpg";
 import Dvc from "../images/certifications/bestincapstone.jpg";
 import Devfest from "../images/certifications/devfest.jpg";
@@ -47,8 +47,8 @@ const education = () => {
       
             <h3 className="educ-h3 mb-5">My Education</h3>
             <ul className="educ-list d-flex flex-column justify-content-center">
-              <li className="  mb-4 p-2 ">
-               
+              <li className="  mb-4 p-2  ">
+                  <GiGraduateCap className="graduate" size={50}/>
   
                     <strong className="title"> Davao Vision College (2022-2023)</strong> 
       
@@ -58,7 +58,7 @@ const education = () => {
                 </p>
               </li>
               <li className="mb-4 p-2 ">
-                {" "}
+              <GiGraduateCap className="graduate" size={50}/>
        
                   <strong className="title"> F. Bustamante National Highschool</strong> (2017-2018)
        
