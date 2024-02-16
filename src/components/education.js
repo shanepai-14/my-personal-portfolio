@@ -21,7 +21,7 @@ const education = () => {
     <section className="educ pb-5">
       <div className="container">
         <div className="row">
-          <div className="swiper-col ">
+          <div className="swiper-col col-md-6 ">
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Parallax, Autoplay]}
