@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-personal-portfolio/static/css/main.6a577bbb.css",
-    "main.js": "/my-personal-portfolio/static/js/main.2c59c4bd.js",
+    "main.css": "/my-personal-portfolio/static/css/main.9db6882d.css",
+    "main.js": "/my-personal-portfolio/static/js/main.1d3881d8.js",
     "static/media/aboutimg.jpg": "/my-personal-portfolio/static/media/aboutimg.fe11031b236f5479efc9.jpg",
     "static/media/hero-image.png": "/my-personal-portfolio/static/media/hero-image.42e05cc0ef67cbb5f80c.png",
     "static/media/hris-login.png": "/my-personal-portfolio/static/media/hris-login.2b957feff7519a11776f.png",
@@ -26,11 +26,11 @@
     "static/media/educ-bg.svg": "/my-personal-portfolio/static/media/educ-bg.d6de8828d2be07fb2af8.svg",
     "static/media/about4.svg": "/my-personal-portfolio/static/media/about4.58e14add17823cfb0592.svg",
     "static/media/flutter-logo.svg": "/my-personal-portfolio/static/media/flutter-logo.83219c099347619051f3aa0fa0e2108e.svg",
-    "main.6a577bbb.css.map": "/my-personal-portfolio/static/css/main.6a577bbb.css.map",
-    "main.2c59c4bd.js.map": "/my-personal-portfolio/static/js/main.2c59c4bd.js.map"
+    "main.9db6882d.css.map": "/my-personal-portfolio/static/css/main.9db6882d.css.map",
+    "main.1d3881d8.js.map": "/my-personal-portfolio/static/js/main.1d3881d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a577bbb.css",
-    "static/js/main.2c59c4bd.js"
+    "static/css/main.9db6882d.css",
+    "static/js/main.1d3881d8.js"
   ]
 }
