@@ -1,10 +1,9 @@
 import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = () => {
- 
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -13,16 +12,22 @@ const Navbar = () => {
       setScrolled(isScrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={`header`} style={{ backgroundColor: scrolled ? '#f8f9fd' : 'transparent' ,zIndex: "10"}}>
+    <header
+      className={`header`}
+      style={{
+        backgroundColor: scrolled ? "#f8f9fd" : "transparent",
+        zIndex: "10",
+      }}
+    >
       <div className="container d-flex justify-content-between p-3 align-items-center">
         <p className="h4 shanepai">
           <strong>Shanepai</strong> <span>先輩</span>
@@ -36,11 +41,11 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="d-flex gap-5">
-          <p className="m-auto">
-            <MdOutlineEmail fill="#3664f4" size={30}/>
-             {" "}shaneenriquez50@gmail.com
+          <p className="m-auto email">
+            <MdOutlineEmail fill="#3664f4" size={30} />{" "}
+            shaneenriquez50@gmail.com
           </p>
-       <Downloadcv />
+          <Downloadcv />
         </div>
       </div>
     </header>

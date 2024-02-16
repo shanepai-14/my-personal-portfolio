@@ -6,14 +6,12 @@ import { Github } from "react-bootstrap-icons";
 import { Linkedin } from "react-bootstrap-icons";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi2";
 
-
-
 const about = () => {
   return (
     <section className="about-sec">
       <div className="container p-5">
         <div className="row myself">
-          <div className="col">
+          <div className="col myselft-img">
             <img src={AboutImage} width={"70%"} className=""></img>
           </div>
           <div className="col d-flex flex-column justify-content-center">
@@ -34,10 +32,10 @@ const about = () => {
               <li>Tibungco, Davao City</li>
               <li>0991-373-1732</li>
             </ul>
-            <div className="d-flex gap-4  align-items-center justify-content-between">
+            <div className="d-flex gap-4 about-links align-items-center justify-content-between">
               <Downloadcv />
               <strong>
-              <HiOutlineChevronDoubleRight />
+                <HiOutlineChevronDoubleRight className="arrow-left" />
               </strong>
               <p className="mb-0">Follow me</p>
               <ul className="list-unstyled justify-content-between mb-0 gap-5">

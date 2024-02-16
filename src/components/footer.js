@@ -5,11 +5,8 @@ import { FiPhone } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer className="">
-      <div
-        className="container position-relative "
-        style={{ paddingTop: "200px" }}
-      >
-        <div className="position-absolute contact-me row p-5 ">
+      <div className="container position-relative footer ">
+        <div className=" contact-me row  ">
           <div className="col me-5">
             <h1>Have a project idea. Let's work together!</h1>
             <p>
@@ -21,25 +18,27 @@ const Footer = () => {
           </div>
           <div className="col ">
             <div className="d-flex align-items-center contact-item p-3 mb-3">
-              <MdOutlineEmail size={40} className="me-2"/>
+              <MdOutlineEmail size={40} className="me-2" />
               <div>
                 <p className="mb-0">Email Me</p>
-                <p className="mb-0 contact-details">shaneenriquez50@gmail.com</p>
+                <p className="mb-0 contact-details">
+                  shaneenriquez50@gmail.com
+                </p>
               </div>
             </div>
             <div className="d-flex align-items-center contact-item p-3">
-              <FiPhone size={40} className="me-2"/>
+              <FiPhone size={40} className="me-2" />
               <div>
                 <p className="mb-0">Contact Me</p>
-              <p className="mb-0 contact-details">0991-373-1732</p>
+                <p className="mb-0 contact-details">0991-373-1732</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="row p-5">
+        <div className="row p-5 ">
           <div className="col">
             <h1 className="mb-3">Shanepai</h1>
-            <p >
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium esse dolor omnis nam laudantium accusantium quaerat
               commodi fuga dignissimos deleniti ipsa s
@@ -57,13 +56,24 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col">
-           <div style={{width:"130px",margin:"auto"}}> <h5 className="mb-4">Quick Links</h5>
-            <ul className="footer-list p-0 d-flex flex-column row-gap-3">
-              <li><a>Home</a></li>
-              <li><a>About me</a></li>
-              <li><a>Portofolio</a></li>
-              <li><a>Contact me</a></li>
-            </ul></div>
+            <div style={{ width: "130px", margin: "auto" }}>
+              {" "}
+              <h5 className="mb-4">Quick Links</h5>
+              <ul className="footer-list p-0 d-flex flex-column row-gap-3">
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>About me</a>
+                </li>
+                <li>
+                  <a>Portofolio</a>
+                </li>
+                <li>
+                  <a>Contact me</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="col">
             <h5 className="mb-4">Intership</h5>

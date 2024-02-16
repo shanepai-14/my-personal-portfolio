@@ -1,4 +1,4 @@
-import React ,{ useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import HeroImage from "../images/hero-image.png";
 import Laravel from "../images/icons/laravel1.svg";
 import Vscode from "../images/icons/vscode.svg";
@@ -8,9 +8,7 @@ import Flutter from "../images/icons/flutter-logo.svg";
 import Downloadcv from "./downloadcv";
 import { FiPhone } from "react-icons/fi";
 
-
-
-const FloatingIcon = ({icon}) => {
+const FloatingIcon = ({ icon }) => {
   const iconRef = useRef(null);
 
   useEffect(() => {
@@ -24,21 +22,23 @@ const FloatingIcon = ({icon}) => {
   }, []);
 
   return (
-  
-    <img src={icon} ref={iconRef} className="position-absolute hero-icons shadow-sm"></img>
-
+    <img
+      src={icon}
+      ref={iconRef}
+      className="position-absolute hero-icons shadow-sm"
+    ></img>
   );
 };
 
-
-const hero = () => { 
+const hero = () => {
   return (
-    <section style={{ height: "100dvh" }} className="hero">
+    <section className="hero">
       <div className="container h-100">
         <div className="row h-100">
           <div className="col  d-flex flex-column justify-content-center align-items-start h-100">
-            <h1 style={{ fontSize: "65px" }}>
-              I'm Shane Enriquez <br></br>a <span className="webdev">Web Developer</span>
+            <h1>
+              I'm Shane Enriquez <br></br>a{" "}
+              <span className="webdev">Web Developer</span>
             </h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -47,25 +47,27 @@ const hero = () => {
             </p>
             <ul className="list-unstyled gap-3 d-flex justify-content-center">
               <li>
-                <button className="contactbtn">Contact Me <FiPhone /></button>
+                <button className="contactbtn">
+                  Contact Me <FiPhone />
+                </button>
               </li>
               <li>
-              <Downloadcv />
+                <Downloadcv />
               </li>
             </ul>
           </div>
           <div className="col h-100 position-relative">
-              <FloatingIcon icon={Laravel}/>
-              <FloatingIcon icon={Vscode}/>
-              <FloatingIcon icon={Javascript}/>
-              <FloatingIcon icon={Reactlogo}/>
-              <FloatingIcon icon={Flutter}/>
-              <img 
-      src={HeroImage}
-      width={"100%"}
-      className="object-fit-cover h-100 heroimage"
-    ></img>
-              </div>
+            <FloatingIcon icon={Laravel} />
+            <FloatingIcon icon={Vscode} />
+            <FloatingIcon icon={Javascript} />
+            <FloatingIcon icon={Reactlogo} />
+            <FloatingIcon icon={Flutter} />
+            <img
+              src={HeroImage}
+              width={"100%"}
+              className="object-fit-cover h-100 heroimage"
+            ></img>
+          </div>
         </div>
       </div>
     </section>
