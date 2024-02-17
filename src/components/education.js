@@ -54,6 +54,13 @@ const education = () => {
               <li className="  mb-4 p-2  ">
                 <GiGraduateCap className="graduate" size={50} />
 
+                <strong className="title"> GOIT PH (2023-Ongoing)</strong>
+
+                <p className="course">FULLSTACK WEB DEVELOPER</p>
+              </li>
+              <li className="  mb-4 p-2  ">
+                <GiGraduateCap className="graduate" size={50} />
+
                 <strong className="title">
                   {" "}
                   Davao Vision College (2022-2023)
@@ -71,7 +78,7 @@ const education = () => {
                 </strong>{" "}
                 (2017-2018)
                 <p className="course">
-                  Technical-Vocational Livelihood In Computer Systems Servicing
+                  TECH-VOC Livelihood In Computer Systems Servicing
                 </p>
               </li>
             </ul>

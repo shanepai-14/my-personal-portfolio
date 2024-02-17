@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="">
       <div className="container position-relative footer ">
         <div className=" contact-me row  ">
-          <div className="col me-5">
+          <div className="col ">
             <h1>Have a project idea. Let's work together!</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,15 +35,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="row p-5 ">
-          <div className="col">
+        <div className="row  quick-links">
+          <div className="col-12 col-md-6">
             <h1 className="mb-3">Shanepai</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium esse dolor omnis nam laudantium accusantium quaerat
               commodi fuga dignissimos deleniti ipsa s
             </p>
-            <ul className="list-unstyled  mb-0 gap-3 mt-4">
+            <ul className="list-unstyled social-links  mb-0 gap-3 mt-4">
               <li>
                 <Github color="black" size={28} />
               </li>
@@ -55,11 +55,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col">
-            <div style={{ width: "130px", margin: "auto" }}>
+          <div className="col-12 col-md-3">
+            <div className="footer-list-div">
               {" "}
               <h5 className="mb-4">Quick Links</h5>
-              <ul className="footer-list p-0 d-flex flex-column row-gap-3">
+              <ul className="footer-list p-0 d-flex row-gap-3">
                 <li>
                   <a>Home</a>
                 </li>

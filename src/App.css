@@ -93,7 +93,9 @@ header ul {
   flex: 0 0 auto;
   width: 50%;
 }
-
+.course {
+  margin-bottom: 0;
+}
 .educ-list li .title,
 .educ-list li .course {
   position: relative;
@@ -103,7 +105,7 @@ header ul {
 .graduate {
   position: absolute;
   left: -70px;
-  bottom: 15px;
+  bottom: 20%;
   transition: all 0.3s ease;
 }
 .educ-list li:after {
@@ -120,6 +122,9 @@ header ul {
 }
 .educ-list li:nth-child(2):hover .graduate {
   color: var(--blue);
+}
+.educ-list li:nth-child(3):hover .graduate {
+  color: var(--highlight);
 }
 .educ-list li:hover {
   color: #fff;
@@ -142,6 +147,13 @@ header ul {
 }
 .educ-list li:nth-child(2) {
   border-left-color: var(--blue);
+}
+
+.educ-list li:nth-child(3):after {
+  background: linear-gradient(102deg, #f9ce69 0%, #fcc84f 100%);
+}
+.educ-list li:nth-child(3) {
+  border-left-color: #f9ce69;
 }
 
 .downloadcv {
@@ -324,6 +336,9 @@ header ul {
   box-shadow: 1rem 1rem 0px var(--blue);
   position: absolute;
 }
+.contact-me div:nth-child(1) {
+  margin-right: 3rem;
+}
 footer {
   background-color: var(--highlight);
 }
@@ -337,6 +352,11 @@ footer {
 }
 .footer-list {
   list-style: none;
+  flex-direction: column;
+}
+.footer-list-div {
+  width: "130px";
+  margin: "auto";
 }
 .about-sec img {
   border-radius: 2px;
@@ -367,6 +387,10 @@ footer {
 .footer {
   padding-top: 200px;
 }
+
+.quick-links {
+  padding: 3rem;
+}
 @media only screen and (max-width: 767px) {
   .hero .row {
     flex-direction: column;
@@ -379,7 +403,8 @@ footer {
     height: auto;
     padding-top: 100px;
   }
-  .email {
+  .email,
+  .email + .downloadcv {
     display: none;
   }
   .hero h1 {
@@ -425,7 +450,7 @@ footer {
     position: static !important;
   }
   .footer {
-    padding-top: 50px;
+    padding-top: 0px;
   }
   .about-list li {
     width: 100%;
@@ -442,5 +467,32 @@ footer {
   }
   .educ-h3 {
     text-align: center;
+  }
+  .footer-list {
+    justify-content: space-between;
+    flex-direction: row !important;
+    column-gap: 10px;
+  }
+  .footer-list-div h5 {
+    text-align: center;
+  }
+  .quick-links {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .footer-list-div {
+    margin-top: 2rem;
+  }
+  .card-img-top {
+    object-fit: cover;
+  }
+  .myself {
+    height: auto;
+  }
+  .contact-me div:nth-child(1) {
+    margin-right: 0;
   }
 }
