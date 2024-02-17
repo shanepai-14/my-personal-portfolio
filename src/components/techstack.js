@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { SiJquery } from "react-icons/si";
+import { SiJquery, SiTailwindcss } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -18,7 +18,7 @@ const TechStack = () => {
       <div className="container">
         <div className="w-100 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
           <h1 className="mb-5">Tech Stack</h1>
-          <ul className="list-unstyled gap-5 d-flex flex-wrap text-center">
+          <ul className="list-unstyled w-100 gap-3 d-flex flex-wrap text-center justify-content-between">
             <li>
               <FaLaravel size={50} className="lara" />
               <p>Laravel</p>
@@ -38,6 +38,10 @@ const TechStack = () => {
             <li>
               <FaBootstrap size={50} />
               <p>BOOTSTRAP</p>
+            </li>
+            <li>
+              <SiTailwindcss size={50} />
+              <p>TAILWIND</p>
             </li>
             <li>
               <FaPhp size={50} />

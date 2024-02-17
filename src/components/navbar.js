@@ -1,7 +1,7 @@
 import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
 import React, { useState, useEffect } from "react";
-import { MdOutlineFileDownload } from "react-icons/md";
+import Navbar from "react-bootstrap/Navbar";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./components/navbar";
+import NavBar from "./components/navbar1";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Project from "./components/projects";
@@ -17,7 +17,7 @@ const App = () => {
       <Education />
       <TechStack />
       <Project />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
