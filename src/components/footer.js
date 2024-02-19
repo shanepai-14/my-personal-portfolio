@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="container position-relative footer ">
-        <div className=" contact-me row  ">
-          <div className="col ">
+        <div className=" contact-me row  " id="contact-me">
+          <div className="col contact-one">
             <h1>Have a project idea. Let's work together!</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -61,21 +61,21 @@ const Footer = () => {
               <h5 className="mb-4">Quick Links</h5>
               <ul className="footer-list p-0 d-flex row-gap-3">
                 <li>
-                  <a>Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a>About me</a>
+                  <a href="#about">About me</a>
                 </li>
                 <li>
-                  <a>Portofolio</a>
+                  <a href="#projects">Projects</a>
                 </li>
                 <li>
-                  <a>Contact me</a>
+                  <a href="#contact-me">Contact me</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col">
+          <div className="col col-md-12 col-lg">
             <h5 className="mb-4">Intership</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -340,9 +340,7 @@ header ul {
   box-shadow: 1rem 1rem 0px var(--blue);
   position: absolute;
 }
-.contact-me div:nth-child(1) {
-  margin-right: 3rem;
-}
+
 footer {
   background-color: var(--highlight);
 }
@@ -411,7 +409,26 @@ footer {
 .about-sec h1 {
   max-width: 460px;
 }
+.herotablet {
+  display: none;
+  object-fit: contain;
+  height: 100%;
+}
+.nav-link:hover {
+  color: var(--highlight) !important;
+}
+.footer-list li a {
+  text-decoration: none;
+  color: var(--black);
+}
+.footer-list li a:hover {
+  color: var(--blue) !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .email {
+    margin: 0;
+  }
   .hero h1 {
     font-size: 35px;
   }
@@ -428,12 +445,34 @@ footer {
     display: block;
     width: 20%;
   }
+  .card-body button {
+    margin-bottom: 5px;
+  }
+  .contact-one p {
+    display: none;
+  }
+  .contact-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quick-links {
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+  .herotablet {
+    display: block;
+  }
+  .heroimage {
+    display: none;
+  }
 }
 @media only screen and (max-width: 767px) {
   .hero .row {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   nav {
     display: none;
   }
@@ -537,4 +576,28 @@ footer {
   .contact-me div:nth-child(1) {
     margin-right: 0;
   }
+  .contact-one p {
+    display: none;
+  }
+  .contact-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  transform: rotate(180deg);
+  transition: all 250ms ease;
+  fill: black;
 }

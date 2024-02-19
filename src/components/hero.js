@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import HeroImage from "../images/hero-image.png";
+import HeroTablet from "../images/hero-image -tablet.png";
 import Laravel from "../images/icons/laravel1.svg";
 import Vscode from "../images/icons/vscode.svg";
 import Javascript from "../images/icons/logo-javascript.svg";
@@ -32,7 +33,7 @@ const FloatingIcon = ({ icon }) => {
 
 const hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="container h-100">
         <div className="row h-100">
           <div className="col hero-title d-flex flex-column justify-content-center align-items-start h-100">
@@ -47,9 +48,11 @@ const hero = () => {
             </p>
             <ul className="list-unstyled gap-3 d-flex justify-content-center">
               <li>
-                <button className="contactbtn">
-                  Contact Me <FiPhone />
-                </button>
+                <a href="#contact-me">
+                  <button className="contactbtn">
+                    Contact Me <FiPhone />
+                  </button>
+                </a>
               </li>
               <li>
                 <Downloadcv />
@@ -67,6 +70,8 @@ const hero = () => {
               width={"100%"}
               className="object-fit-cover h-100 heroimage"
             ></img>
+
+            <img src={HeroTablet} width={"100%"} className="herotablet"></img>
           </div>
         </div>
       </div>

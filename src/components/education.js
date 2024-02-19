@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const education = () => {
   return (
-    <section className="educ pb-5">
+    <section className="educ pb-5" id="education">
       <div className="container">
         <div className="row">
           <div className="swiper-col col-lg-6 ">

@@ -8,7 +8,7 @@ import { HiOutlineChevronDoubleRight } from "react-icons/hi2";
 
 const about = () => {
   return (
-    <section className="about-sec">
+    <section className="about-sec" id="about">
       <div className="container p-5">
         <div className="row myself">
           <div className="col myselft-img">
