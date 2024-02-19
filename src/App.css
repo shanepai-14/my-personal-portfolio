@@ -395,6 +395,40 @@ footer {
 .quick-links {
   padding: 3rem;
 }
+.navbar-buttons {
+  gap: 3rem;
+  padding-bottom: 15px;
+}
+.email {
+  margin: auto;
+}
+.myself-img-about {
+  display: none;
+}
+.myself {
+  position: relative;
+}
+.about-sec h1 {
+  max-width: 460px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero-title {
+    gap: 20px;
+  }
+  .myselft-img {
+    display: none;
+  }
+  .myself-img-about {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    display: block;
+    width: 20%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .hero .row {
     flex-direction: column;
@@ -407,9 +441,13 @@ footer {
     height: auto;
     padding-top: 100px;
   }
-  .email,
-  .email + .downloadcv {
-    display: none;
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+  .email {
+    margin: 0;
   }
   .hero h1 {
     text-align: center;

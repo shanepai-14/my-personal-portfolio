@@ -35,7 +35,7 @@ const hero = () => {
     <section className="hero">
       <div className="container h-100">
         <div className="row h-100">
-          <div className="col  d-flex flex-column justify-content-center align-items-start h-100">
+          <div className="col hero-title d-flex flex-column justify-content-center align-items-start h-100">
             <h1>
               I'm Shane Enriquez <br></br>a{" "}
               <span className="webdev">Web Developer</span>

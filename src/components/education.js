@@ -21,7 +21,7 @@ const education = () => {
     <section className="educ pb-5">
       <div className="container">
         <div className="row">
-          <div className="swiper-col col-md-6 ">
+          <div className="swiper-col col-lg-6 ">
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Parallax, Autoplay]}
@@ -50,15 +50,15 @@ const education = () => {
           </div>
           <div className="col p-3">
             <h3 className="educ-h3 mb-5">My Education</h3>
-            <ul className="educ-list d-flex flex-column justify-content-center">
-              <li className="  mb-4 p-2  ">
+            <ul className="educ-list d-flex flex-column ">
+              <li className=" p-2  ">
                 <GiGraduateCap className="graduate" size={50} />
 
-                <strong className="title"> GOIT PH (2023-Ongoing)</strong>
+                <strong className="title"> GOIT PH (2023-Present)</strong>
 
                 <p className="course">FULLSTACK WEB DEVELOPER</p>
               </li>
-              <li className="  mb-4 p-2  ">
+              <li className="   p-2  ">
                 <GiGraduateCap className="graduate" size={50} />
 
                 <strong className="title">
@@ -70,7 +70,7 @@ const education = () => {
                   Bachelor Of Science In Information Technology
                 </p>
               </li>
-              <li className="mb-4 p-2 ">
+              <li className=" p-2 ">
                 <GiGraduateCap className="graduate" size={50} />
                 <strong className="title">
                   {" "}

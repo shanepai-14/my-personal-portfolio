@@ -6,7 +6,7 @@ import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
 function BasicExample() {
   const [scrolled, setScrolled] = useState(false);
-
+  const [toggleDropdown, setToggleDropdown] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 100;
@@ -24,9 +24,9 @@ function BasicExample() {
   return (
     <Navbar
       expand="lg"
-      className="header"
+      className={`header ${scrolled ? `shadow-sm` : `shadow-none`}`}
       style={{
-        backgroundColor: scrolled ? "#f8f9fd" : "transparent",
+        backgroundColor: scrolled || toggleDropdown ? "#f8f9fd" : "transparent",
         zIndex: "10",
       }}
     >
@@ -36,7 +36,10 @@ function BasicExample() {
             <strong>Shanepai</strong> <span>先輩</span>
           </p>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setToggleDropdown((prev) => !prev)}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -44,8 +47,8 @@ function BasicExample() {
             <Nav.Link href="#link">Projects</Nav.Link>
             <Nav.Link href="#link">Contact me</Nav.Link>
           </Nav>
-          <div className="d-flex gap-5">
-            <p className="m-auto email">
+          <div className="d-flex  navbar-buttons">
+            <p className=" email">
               <MdOutlineEmail fill="#3664f4" size={30} />{" "}
               shaneenriquez50@gmail.com
             </p>

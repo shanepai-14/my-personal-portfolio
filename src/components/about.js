@@ -15,6 +15,11 @@ const about = () => {
             <img src={AboutImage} width={"70%"} className=""></img>
           </div>
           <div className="col d-flex flex-column justify-content-center">
+            <img
+              src={AboutImage}
+              width={"70%"}
+              className="myself-img-about"
+            ></img>
             <h3>ABOUT ME</h3>
             <h1 className="mb-5">
               Creation timelines for the standard lorem ipsum

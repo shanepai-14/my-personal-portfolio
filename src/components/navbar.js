@@ -22,9 +22,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`header`}
+      className={`header `}
       style={{
         backgroundColor: scrolled ? "#f8f9fd" : "transparent",
+
         zIndex: "10",
       }}
     >
