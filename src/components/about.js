@@ -18,6 +18,7 @@ const about = () => {
             <img
               src={AboutImage}
               width={"70%"}
+              loading="lazy"
               className="myself-img-about"
             ></img>
             <h3>ABOUT ME</h3>
@@ -43,15 +44,27 @@ const about = () => {
                 <HiOutlineChevronDoubleRight className="arrow-left" />
               </strong>
               <p className="mb-0">Follow me</p>
-              <ul className="list-unstyled justify-content-between mb-0 gap-5">
+              <ul className="list-unstyled about-socmed justify-content-between mb-0 gap-5">
                 <li>
-                  <Github color="black" size={28} />
+                  <a href="https://github.com/shanepai-14" target="_blank">
+                    {" "}
+                    <Github color="black" size={28} />
+                  </a>
                 </li>
                 <li>
-                  <Linkedin color="#0C64C5" size={28} />
+                  <a
+                    href="https://www.linkedin.com/in/shane-enriquez-2927a1254/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <Linkedin color="#0C64C5" size={28} />
+                  </a>
                 </li>
                 <li>
-                  <Facebook color="#0866FF" size={28} />
+                  <a href="https://www.facebook.com/pee.poy.98" target="_blank">
+                    {" "}
+                    <Facebook color="#0866FF" size={28} />
+                  </a>
                 </li>
               </ul>
             </div>

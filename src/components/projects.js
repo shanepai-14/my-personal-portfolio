@@ -10,9 +10,17 @@ import Qrattendance from "../images/projects/qrattendance.png";
 import FlutterResume from "../images/projects/FlutterResume.png";
 import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
+import Simply from "../images/projects/simplycholate.png";
 const projects = () => {
   const projects_list = {
     result: [
+      {
+        title: "Simply Chocolate",
+        imageurl: Simply,
+        stack: ["scss", "html", "javascript", "parcel"],
+        githubUrl: "https://github.com/shanepai-14/bug-buster-first-project",
+        liveUrl: "https://shanepai-14.github.io/bug-buster-first-project/",
+      },
       {
         title: "Student Management System",
         imageurl: Dvc,

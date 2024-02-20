@@ -45,13 +45,22 @@ const Footer = () => {
             </p>
             <ul className="list-unstyled social-links  mb-0 gap-3 mt-4">
               <li>
-                <Github color="black" size={28} />
+                <a href="https://github.com/shanepai-14" target="_blank">
+                  <Github color="black" size={28} />
+                </a>
               </li>
               <li>
-                <Linkedin color="black" size={28} />
+                <a
+                  href="https://www.linkedin.com/in/shane-enriquez-2927a1254/"
+                  target="_blank"
+                >
+                  <Linkedin color="black" size={28} />
+                </a>
               </li>
               <li>
-                <Facebook color="black" size={28} />
+                <a href="https://www.facebook.com/pee.poy.98" target="_blank">
+                  <Facebook color="black" size={28} />
+                </a>
               </li>
             </ul>
           </div>

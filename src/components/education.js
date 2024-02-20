@@ -38,13 +38,13 @@ const education = () => {
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-                <img src={Dcit} width={"100%"} />
+                <img src={Dcit} loading="lazy" width={"100%"} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Dvc} width={"100%"} />
+                <img src={Dvc} loading="lazy" width={"100%"} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Devfest} width={"100%"} />
+                <img src={Devfest} loading="lazy" width={"100%"} />
               </SwiperSlide>
             </Swiper>
           </div>

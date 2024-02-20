@@ -601,3 +601,9 @@ footer {
   transition: all 250ms ease;
   fill: black;
 }
+.social-links li svg:hover {
+  fill: white;
+}
+.about-socmed li a svg:hover {
+  fill: var(--highlight);
+}

@@ -60,18 +60,24 @@ const hero = () => {
             </ul>
           </div>
           <div className="col h-100 position-relative">
-            <FloatingIcon icon={Laravel} />
-            <FloatingIcon icon={Vscode} />
-            <FloatingIcon icon={Javascript} />
-            <FloatingIcon icon={Reactlogo} />
-            <FloatingIcon icon={Flutter} />
+            <FloatingIcon loading="lazy" icon={Laravel} />
+            <FloatingIcon loading="lazy" icon={Vscode} />
+            <FloatingIcon loading="lazy" icon={Javascript} />
+            <FloatingIcon loading="lazy" icon={Reactlogo} />
+            <FloatingIcon loading="lazy" icon={Flutter} />
             <img
               src={HeroImage}
               width={"100%"}
+              loading="lazy"
               className="object-fit-cover h-100 heroimage"
             ></img>
 
-            <img src={HeroTablet} width={"100%"} className="herotablet"></img>
+            <img
+              src={HeroTablet}
+              loading="lazy"
+              width={"100%"}
+              className="herotablet"
+            ></img>
           </div>
         </div>
       </div>
