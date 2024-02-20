@@ -1,5 +1,4 @@
 import React from "react";
-import { Twitter } from "react-bootstrap-icons";
 import { FaLaravel } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
@@ -11,63 +10,80 @@ import { SiFlutter } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiJquery, SiTailwindcss } from "react-icons/si";
-
+import { HeaderAnimation, itemVariants } from "./animation/animation";
+import { motion, useInView } from "framer-motion";
 const TechStack = () => {
   return (
     <section className="tect-stack">
       <div className="container">
         <div className="w-100 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
-          <h1 className="mb-5">Tech Stack</h1>
-          <ul className="list-unstyled w-100 gap-3 d-flex flex-wrap text-center justify-content-between">
-            <li>
+          <motion.h1
+            className="mb-5"
+            initial={{ opacity: 0, x: -25 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            Tech Stack
+          </motion.h1>
+          <motion.ul
+            className="list-unstyled w-100 gap-3 d-flex flex-wrap text-center justify-content-between"
+            variants={HeaderAnimation}
+            initial="hidden"
+            whileInView="visible"
+          >
+            <motion.li variants={itemVariants}>
               <FaLaravel size={50} className="lara" />
               <p>Laravel</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <FaHtml5 size={50} />
               <p>HTML</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <IoLogoCss3 size={50} />
               <p>CSS</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <IoLogoJavascript size={50} />
               <p>JAVASCRIPT</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <FaBootstrap size={50} />
               <p>BOOTSTRAP</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiTailwindcss size={50} />
               <p>TAILWIND</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <FaPhp size={50} />
               <p>PHP</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <FaReact size={50} />
               <p>REACT</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiFlutter size={50} />
               <p>FLUTTER</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiFirebase size={50} />
               <p>FIREBASE</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiMysql size={50} />
               <p>MYSQL</p>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiJquery size={50} />
               <p>JQUERY</p>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </div>
       </div>
     </section>

@@ -2,7 +2,8 @@ import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
 import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
-
+import { item } from "../components/animation/animation.js";
+import { useInView, motion } from "framer-motion";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -35,10 +36,10 @@ const Navbar = () => {
         </p>
         <nav className="h-100">
           <ul className="list-unstyled gap-5 justify-content-center align-items-center m-auto mb-0">
-            <li>Home</li>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contact me</li>
+            <motion.li variants={item}>Home</motion.li>
+            <motion.li>About me</motion.li>
+            <motion.li>Projects</motion.li>
+            <motion.li>Contact me</motion.li>
           </ul>
         </nav>
         <div className="d-flex gap-5">

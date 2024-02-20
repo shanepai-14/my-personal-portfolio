@@ -8,7 +8,16 @@ import Reactlogo from "../images/icons/react-2.svg";
 import Flutter from "../images/icons/flutter-logo.svg";
 import Downloadcv from "./downloadcv";
 import { FiPhone } from "react-icons/fi";
-
+import {
+  fadeInOutRightToLeft,
+  fadeInOutLeftToRight,
+  fadeInOutUpToDown,
+  fadeInOutDownToUp,
+  item,
+  listVariants,
+  itemVariants,
+} from "../components/animation/animation.js";
+import { useInView, motion } from "framer-motion";
 const FloatingIcon = ({ icon }) => {
   const iconRef = useRef(null);
 
@@ -26,63 +35,177 @@ const FloatingIcon = ({ icon }) => {
     <img
       src={icon}
       ref={iconRef}
-      className="position-absolute hero-icons shadow-sm"
+      className="shadow-sm"
+      width={50}
+      height={50}
+      style={{ background: "white", padding: "7px" }}
     ></img>
   );
 };
+const techstack = [
+  {
+    icon: Laravel,
+  },
+  {
+    icon: Vscode,
+  },
+  {
+    icon: Javascript,
+  },
+  {
+    icon: Reactlogo,
+  },
+  {
+    icon: Flutter,
+  },
+];
+const Hero = () => {
+  const ref = useRef(null);
+  const inView = useInView({ threshold: 0.5 }); // Adjust threshold as needed
+  const [rotate, setRotate] = React.useState(false);
+  useEffect(() => {
+    if (inView.isIntersecting) {
+      // Animate element after it comes into view
+    }
+  }, [inView.isIntersecting]);
 
-const hero = () => {
   return (
     <section className="hero" id="home">
       <div className="container h-100">
         <div className="row h-100">
-          <div className="col hero-title d-flex flex-column justify-content-center align-items-start h-100">
-            <h1>
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="col hero-title d-flex flex-column justify-content-center align-items-start h-100"
+          >
+            <motion.h1
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               I'm Shane Enriquez <br></br>a{" "}
               <span className="webdev">Web Developer</span>
-            </h1>
-            <p>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.7,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s,
-            </p>
+            </motion.p>
             <ul className="list-unstyled gap-3 d-flex justify-content-center">
-              <li>
+              <motion.li
+                initial={{ opacity: 0, x: -25 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.9,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+              >
                 <a href="#contact-me">
                   <button className="contactbtn">
                     Contact Me <FiPhone />
                   </button>
                 </a>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -25 }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.9,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+              >
                 <Downloadcv />
-              </li>
+              </motion.li>
             </ul>
-          </div>
-          <div className="col h-100 position-relative">
-            <FloatingIcon loading="lazy" icon={Laravel} />
-            <FloatingIcon loading="lazy" icon={Vscode} />
-            <FloatingIcon loading="lazy" icon={Javascript} />
-            <FloatingIcon loading="lazy" icon={Reactlogo} />
-            <FloatingIcon loading="lazy" icon={Flutter} />
-            <img
+          </motion.div>
+          <motion.div
+            className="col h-100 position-relative  "
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+          >
+            {techstack?.length > 0 ? (
+              <>
+                {techstack.map((icon, index) => (
+                  <>
+                    <motion.div
+                      key={index}
+                      variants={itemVariants}
+                      className="position-absolute hero-icons  "
+                      whileInView="visible"
+                    >
+                      <FloatingIcon
+                        key={index}
+                        loading="lazy"
+                        icon={icon.icon}
+                      />
+                    </motion.div>
+                  </>
+                ))}
+              </>
+            ) : (
+              <div className="empty">
+                <h2>No Icon Found</h2>
+              </div>
+            )}
+
+            {/* <FloatingIcon loading="lazy" icon={Laravel} />
+              <FloatingIcon loading="lazy" icon={Vscode} />
+              <FloatingIcon loading="lazy" icon={Javascript} />
+              <FloatingIcon loading="lazy" icon={Reactlogo} />
+              <FloatingIcon loading="lazy" icon={Flutter} /> */}
+
+            <motion.img
+              initial={{ opacity: 0, x: -25, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
               src={HeroImage}
               width={"100%"}
               loading="lazy"
               className="object-fit-cover h-100 heroimage"
-            ></img>
+            ></motion.img>
 
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
               src={HeroTablet}
               loading="lazy"
               width={"100%"}
               className="herotablet"
-            ></img>
-          </div>
+            ></motion.img>
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-export default hero;
+export default Hero;

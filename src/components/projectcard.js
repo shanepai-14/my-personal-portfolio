@@ -3,9 +3,18 @@ import { Github } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
 import Techstack from "./tech-stack-button/stackButton";
 import { FaRegEye } from "react-icons/fa6";
+import { item } from "../components/animation/animation.js";
+import { useInView, motion } from "framer-motion";
 const ProjectCard = ({ project }) => {
   return (
-    <li className="card-item shadow">
+    <motion.li
+      className="card-item shadow"
+      variants={item}
+      transition={{
+        duration: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
       <Card style={{ backgroundColor: "#F5F5F5" }} className="border-0">
         <div className="overflow-hidden position-relative">
           <Card.Img
@@ -63,7 +72,7 @@ const ProjectCard = ({ project }) => {
           )}
         </Card.Body>
       </Card>
-    </li>
+    </motion.li>
   );
 };
 

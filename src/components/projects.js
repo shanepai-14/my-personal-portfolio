@@ -11,6 +11,8 @@ import FlutterResume from "../images/projects/FlutterResume.png";
 import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
 import Simply from "../images/projects/simplycholate.png";
+import { SocialContainer } from "../components/animation/animation.js";
+import { useInView, motion } from "framer-motion";
 const projects = () => {
   const projects_list = {
     result: [
@@ -97,7 +99,10 @@ const projects = () => {
   };
   return (
     <section className="project-sec" id="projects">
-      <div
+      <motion.div
+        variants={SocialContainer}
+        initial="hidden"
+        whileInView="visible"
         className="container rounded p-5 shadow-sm"
         style={{ backgroundColor: "#F6F6F6" }}
       >
@@ -115,7 +120,7 @@ const projects = () => {
             </div>
           )}
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 };
