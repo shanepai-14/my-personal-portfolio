@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ProjectCard from "./projectcard";
 import ProjHris from "../images/projects/hris-login.png";
 import Seteafy from "../images/projects/seteafyhero.png";
@@ -11,9 +11,15 @@ import FlutterResume from "../images/projects/FlutterResume.png";
 import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
 import Simply from "../images/projects/simplycholate.png";
-import { SocialContainer } from "../components/animation/animation.js";
+import {
+  ProjectVariants,
+  headAnimation,
+} from "../components/animation/animation.js";
 import { useInView, motion } from "framer-motion";
-const projects = () => {
+
+const Projects = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const projects_list = {
     result: [
       {
@@ -97,17 +103,31 @@ const projects = () => {
       },
     ],
   };
+
   return (
     <section className="project-sec" id="projects">
-      <motion.div
-        variants={SocialContainer}
-        initial="hidden"
-        whileInView="visible"
+      <div
         className="container rounded p-5 shadow-sm"
         style={{ backgroundColor: "#F6F6F6" }}
       >
-        <h1 className="text-center mb-5">Projects</h1>
-        <ul className="list-unstyled justify-content-center gap-3 flex-wrap">
+        <motion.h1
+          ref={ref}
+          initial="hidden"
+          variants={headAnimation}
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-5"
+        >
+          Projects
+        </motion.h1>
+        <motion.ul
+          ref={ref}
+          variants={ProjectVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ duration: 0.5 }}
+          className="list-unstyled justify-content-center gap-3 flex-wrap"
+        >
           {projects_list?.result.length > 0 ? (
             <>
               {projects_list.result.map((project) => (
@@ -119,10 +139,10 @@ const projects = () => {
               <h2>No Project Found</h2>
             </div>
           )}
-        </ul>
-      </motion.div>
+        </motion.ul>
+      </div>
     </section>
   );
 };
 
-export default projects;
+export default Projects;

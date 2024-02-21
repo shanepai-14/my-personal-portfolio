@@ -5,33 +5,61 @@ import { Facebook } from "react-bootstrap-icons";
 import { Github } from "react-bootstrap-icons";
 import { Linkedin } from "react-bootstrap-icons";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi2";
-
+import { motion } from "framer-motion";
+import { LeftRight, AboutContainer, aboutItem } from "./animation/animation";
 const about = () => {
   return (
     <section className="about-sec" id="about">
       <div className="container p-5">
         <div className="row myself">
           <div className="col myselft-img">
-            <img src={AboutImage} width={"70%"} className=""></img>
+            <motion.img
+              variants={LeftRight}
+              initial="hidden"
+              whileInView="visible"
+              src={AboutImage}
+              width={"70%"}
+            ></motion.img>
           </div>
-          <div className="col d-flex flex-column justify-content-center">
+          <motion.div
+            variants={AboutContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="col d-flex flex-column justify-content-center"
+          >
             <img
               src={AboutImage}
               width={"70%"}
               loading="lazy"
               className="myself-img-about"
             ></img>
-            <h3>ABOUT ME</h3>
-            <h1 className="mb-5">
+            <motion.h3
+              variants={aboutItem}
+              initial="hidden"
+              whileInView="visible"
+            >
+              ABOUT ME
+            </motion.h3>
+            <motion.h1
+              className="mb-5"
+              variants={aboutItem}
+              initial="hidden"
+              whileInView="visible"
+            >
               Creation timelines for the standard lorem ipsum
-            </h1>
-            <p className="mb-5">
+            </motion.h1>
+            <motion.p
+              className="mb-5"
+              variants={aboutItem}
+              initial="hidden"
+              whileInView="visible"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-            </p>
+            </motion.p>
             <ul className="about-list d-flex flex-wrap w-100 mb-4">
               <li>Shane F. Enriquez</li>
               <li>shaneenriquez50gmail.com</li>
@@ -68,7 +96,7 @@ const about = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

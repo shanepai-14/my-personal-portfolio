@@ -16,12 +16,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { motion } from "framer-motion";
 const education = () => {
   return (
     <section className="educ pb-5" id="education">
       <div className="container">
         <div className="row">
-          <div className="swiper-col col-lg-6 ">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            // viewport={{ once: true }}
+            className="swiper-col col-lg-6 "
+          >
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Parallax, Autoplay]}
@@ -47,18 +53,34 @@ const education = () => {
                 <img src={Devfest} loading="lazy" width={"100%"} />
               </SwiperSlide>
             </Swiper>
-          </div>
+          </motion.div>
           <div className="col p-3">
             <h3 className="educ-h3 mb-5">My Education</h3>
-            <ul className="educ-list d-flex flex-column ">
-              <li className=" p-2  ">
+            <motion.ul
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                ease: "linear",
+                staggerChildren: 5,
+              }}
+              className="educ-list d-flex flex-column "
+            >
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className=" p-2  "
+              >
                 <GiGraduateCap className="graduate" size={50} />
 
                 <strong className="title"> GOIT PH (2023-Present)</strong>
 
                 <p className="course">FULLSTACK WEB DEVELOPER</p>
-              </li>
-              <li className="   p-2  ">
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="   p-2  "
+              >
                 <GiGraduateCap className="graduate" size={50} />
 
                 <strong className="title">
@@ -69,8 +91,12 @@ const education = () => {
                 <p className="course">
                   Bachelor Of Science In Information Technology
                 </p>
-              </li>
-              <li className=" p-2 ">
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className=" p-2 "
+              >
                 <GiGraduateCap className="graduate" size={50} />
                 <strong className="title">
                   {" "}
@@ -80,8 +106,8 @@ const education = () => {
                 <p className="course">
                   TECH-VOC Livelihood In Computer Systems Servicing
                 </p>
-              </li>
-            </ul>
+              </motion.li>
+            </motion.ul>
           </div>
         </div>
       </div>

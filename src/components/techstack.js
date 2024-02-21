@@ -10,7 +10,11 @@ import { SiFlutter } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiJquery, SiTailwindcss } from "react-icons/si";
-import { HeaderAnimation, itemVariants } from "./animation/animation";
+import {
+  HeaderAnimation,
+  headAnimation,
+  itemVariants,
+} from "./animation/animation";
 import { motion, useInView } from "framer-motion";
 const TechStack = () => {
   return (
@@ -19,13 +23,9 @@ const TechStack = () => {
         <div className="w-100 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
           <motion.h1
             className="mb-5"
-            initial={{ opacity: 0, x: -25 }}
-            whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
+            variants={headAnimation}
+            initial="hidden"
+            whileInView="visible"
           >
             Tech Stack
           </motion.h1>

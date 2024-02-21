@@ -150,8 +150,8 @@ const Hero = () => {
                     <motion.div
                       key={index}
                       variants={itemVariants}
-                      className="position-absolute hero-icons  "
                       whileInView="visible"
+                      className="position-absolute hero-icons"
                     >
                       <FloatingIcon
                         key={index}

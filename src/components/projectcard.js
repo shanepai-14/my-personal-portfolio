@@ -6,10 +6,14 @@ import { FaRegEye } from "react-icons/fa6";
 import { item } from "../components/animation/animation.js";
 import { useInView, motion } from "framer-motion";
 const ProjectCard = ({ project }) => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <motion.li
       className="card-item shadow"
-      variants={item}
+      variants={itemVariants}
       transition={{
         duration: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
