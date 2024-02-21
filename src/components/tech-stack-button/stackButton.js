@@ -12,7 +12,8 @@ import { SiMysql } from "react-icons/si";
 import { SiJquery } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-
+import { SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 const StackButton = ({ techstack }) => {
   const capitalizedText =
     techstack.charAt(0).toUpperCase() + techstack.slice(1);
@@ -44,6 +45,10 @@ const StackButton = ({ techstack }) => {
         return <SiSass />;
       case "tailwind":
         return <SiTailwindcss />;
+      case "nextjs":
+        return <TbBrandNextjs />;
+      case "typescript":
+        return <SiTypescript />;
       default:
         return null;
     }

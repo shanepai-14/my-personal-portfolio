@@ -11,6 +11,7 @@ import FlutterResume from "../images/projects/FlutterResume.png";
 import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
 import Simply from "../images/projects/simplycholate.png";
+import Apexpoint from "../images/projects/apexpoint.png";
 import {
   ProjectVariants,
   headAnimation,
@@ -22,6 +23,13 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true });
   const projects_list = {
     result: [
+      {
+        title: "Apexpoint",
+        imageurl: Apexpoint,
+        stack: ["nextjs", "tailwind", "typescript"],
+        githubUrl: "https://github.com/Zeff01/Apexpointv2",
+        liveUrl: "https://apexpointv2.vercel.app/lubie",
+      },
       {
         title: "Simply Chocolate",
         imageurl: Simply,

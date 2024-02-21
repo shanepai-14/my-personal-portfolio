@@ -36,6 +36,7 @@ const FloatingIcon = ({ icon }) => {
       src={icon}
       ref={iconRef}
       className="shadow-sm"
+      loading="lazy"
       width={50}
       height={50}
       style={{ background: "white", padding: "7px" }}
@@ -145,10 +146,10 @@ const Hero = () => {
           >
             {techstack?.length > 0 ? (
               <>
-                {techstack.map((icon, index) => (
+                {techstack.map((icon, stackid) => (
                   <>
                     <motion.div
-                      key={index}
+                      key={stackid}
                       variants={itemVariants}
                       initial="hidden"
                       whileInView="visible"

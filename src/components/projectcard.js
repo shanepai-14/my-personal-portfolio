@@ -3,8 +3,7 @@ import { Github } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
 import Techstack from "./tech-stack-button/stackButton";
 import { FaRegEye } from "react-icons/fa6";
-import { item } from "../components/animation/animation.js";
-import { useInView, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const ProjectCard = ({ project }) => {
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
