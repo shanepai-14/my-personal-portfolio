@@ -130,8 +130,8 @@ const Projects = () => {
         >
           {projects_list?.result.length > 0 ? (
             <>
-              {projects_list.result.map((project) => (
-                <ProjectCard project={project} />
+              {projects_list.result.map((project, index) => (
+                <ProjectCard key={index} project={project} />
               ))}
             </>
           ) : (

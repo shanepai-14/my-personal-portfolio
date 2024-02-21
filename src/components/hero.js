@@ -154,11 +154,7 @@ const Hero = () => {
                       whileInView="visible"
                       className="position-absolute hero-icons"
                     >
-                      <FloatingIcon
-                        key={index}
-                        loading="lazy"
-                        icon={icon.icon}
-                      />
+                      <FloatingIcon loading="lazy" icon={icon.icon} />
                     </motion.div>
                   </>
                 ))}

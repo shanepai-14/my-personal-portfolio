@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Downloadcv from "./downloadcv";
 import { MdOutlineEmail } from "react-icons/md";
 import { item, HeaderAnimation } from "../components/animation/animation.js";
-import { useInView, motion } from "framer-motion";
+import { motion } from "framer-motion";
 function BasicExample() {
   const [scrolled, setScrolled] = useState(false);
   const [toggleDropdown, setToggleDropdown] = useState(false);
@@ -28,6 +28,7 @@ function BasicExample() {
       variants={HeaderAnimation}
       initial="hidden"
       animate="visible"
+      viewport={{ once: true }}
       style={{
         zIndex: "10",
       }}
@@ -42,7 +43,11 @@ function BasicExample() {
       >
         <Container>
           <Navbar.Brand href="#home">
-            <motion.p variants={item} className="h4 shanepai">
+            <motion.p
+              viewport={{ once: true }}
+              variants={item}
+              className="h4 shanepai"
+            >
               <strong>Shanepai</strong> <span>先輩</span>
             </motion.p>
           </Navbar.Brand>
@@ -66,22 +71,34 @@ function BasicExample() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">
-                <motion.p variants={item}>Home</motion.p>
+                <motion.p viewport={{ once: true }} variants={item}>
+                  Home
+                </motion.p>
               </Nav.Link>
               <Nav.Link href="#about">
                 {" "}
-                <motion.p variants={item}>About me</motion.p>
+                <motion.p viewport={{ once: true }} variants={item}>
+                  About me
+                </motion.p>
               </Nav.Link>
               <Nav.Link href="#projects">
                 {" "}
-                <motion.p variants={item}>Projects</motion.p>
+                <motion.p viewport={{ once: true }} variants={item}>
+                  Projects
+                </motion.p>
               </Nav.Link>
               <Nav.Link href="#contact-me">
                 {" "}
-                <motion.p variants={item}>Contact me</motion.p>
+                <motion.p viewport={{ once: true }} variants={item}>
+                  Contact me
+                </motion.p>
               </Nav.Link>
             </Nav>
-            <motion.div variants={item} className="d-flex  navbar-buttons">
+            <motion.div
+              viewport={{ once: true }}
+              variants={item}
+              className="d-flex  navbar-buttons"
+            >
               <p className=" email">
                 <MdOutlineEmail fill="#3664f4" size={30} />{" "}
                 shaneenriquez50@gmail.com

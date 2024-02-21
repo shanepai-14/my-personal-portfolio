@@ -67,8 +67,8 @@ const ProjectCard = ({ project }) => {
 
           {project.stack.length > 0 ? (
             <>
-              {project.stack.map((techstack) => (
-                <Techstack techstack={techstack} />
+              {project.stack.map((techstack, index) => (
+                <Techstack key={index} techstack={techstack} />
               ))}
             </>
           ) : (
