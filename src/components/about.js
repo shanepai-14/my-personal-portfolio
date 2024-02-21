@@ -61,39 +61,79 @@ const about = () => {
               survived not only five centuries, but also the leap into
             </motion.p>
             <ul className="about-list d-flex flex-wrap w-100 mb-4">
-              <li>Shane F. Enriquez</li>
-              <li>shaneenriquez50gmail.com</li>
-              <li>Tibungco, Davao City</li>
-              <li>0991-373-1732</li>
+              <motion.li
+                variants={aboutItem}
+                initial="hidden"
+                whileInView="visible"
+              >
+                Shane F. Enriquez
+              </motion.li>
+              <motion.li
+                variants={aboutItem}
+                initial="hidden"
+                whileInView="visible"
+              >
+                shaneenriquez50gmail.com
+              </motion.li>
+              <motion.li
+                variants={aboutItem}
+                initial="hidden"
+                whileInView="visible"
+              >
+                Tibungco, Davao City
+              </motion.li>
+              <motion.li
+                variants={aboutItem}
+                initial="hidden"
+                whileInView="visible"
+              >
+                0991-373-1732
+              </motion.li>
             </ul>
             <div className="d-flex gap-4 about-links align-items-center justify-content-between">
               <Downloadcv />
-              <strong>
+              <motion.strong
+                variants={aboutItem}
+                initial="hidden"
+                whileInView="visible"
+              >
                 <HiOutlineChevronDoubleRight className="arrow-left" />
-              </strong>
+              </motion.strong>
               <p className="mb-0">Follow me</p>
               <ul className="list-unstyled about-socmed justify-content-between mb-0 gap-5">
-                <li>
+                <motion.li
+                  variants={aboutItem}
+                  initial="hidden"
+                  whileInView="visible"
+                >
                   <a href="https://github.com/shanepai-14" target="_blank">
                     {" "}
                     <Github color="black" size={28} />
                   </a>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  variants={aboutItem}
+                  initial="hidden"
+                  whileInView="visible"
+                >
                   <a
-                    href="https://www.linkedin.com/in/shane-enriquez-2927a1254/"
+                    href="https://www.motion.linkedin.com/in/shane-enriquez-2927a1254/"
                     target="_blank"
                   >
                     {" "}
                     <Linkedin color="#0C64C5" size={28} />
                   </a>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  variants={aboutItem}
+                  initial="hidden"
+                  whileInView="visible"
+                >
                   <a href="https://www.facebook.com/pee.poy.98" target="_blank">
                     {" "}
                     <Facebook color="#0866FF" size={28} />
                   </a>
-                </li>
+                </motion.li>
               </ul>
             </div>
           </motion.div>

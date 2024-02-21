@@ -6,13 +6,13 @@ export const box = {
     scale: 1,
     transition: {
       delayChildren: 0.2,
-      staggerChildren: 0.1,
+      staggerChildren: 0.3,
     },
   },
 };
 
 export const aboutItem = {
-  hidden: { x: 0, opacity: 0 },
+  hidden: { x: 50, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,

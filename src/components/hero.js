@@ -150,6 +150,7 @@ const Hero = () => {
                     <motion.div
                       key={index}
                       variants={itemVariants}
+                      initial="hidden"
                       whileInView="visible"
                       className="position-absolute hero-icons"
                     >
@@ -175,8 +176,8 @@ const Hero = () => {
               <FloatingIcon loading="lazy" icon={Flutter} /> */}
 
             <motion.img
-              initial={{ opacity: 0, x: -25, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.8,
                 delay: 0.5,
@@ -189,8 +190,8 @@ const Hero = () => {
             ></motion.img>
 
             <motion.img
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.8,
                 delay: 0.5,
