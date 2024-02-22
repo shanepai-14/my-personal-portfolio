@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
-import cv from "../documents/SHANE ENRIQUEZ-WEB DEV.pdf";
+import cv from "../documents/Shane F. Enriquez CV.pdf";
 
 const handleDownloadCV = () => {
   // Replace 'my-cv.pdf' with the actual name of your CV file
