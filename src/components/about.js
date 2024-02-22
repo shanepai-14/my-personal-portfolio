@@ -46,7 +46,7 @@ const about = () => {
               initial="hidden"
               whileInView="visible"
             >
-              Creation timelines for the standard lorem ipsum
+              I'm Shane Enriquez<br></br> a Web Developer
             </motion.h1>
             <motion.p
               className="mb-5"
@@ -54,11 +54,12 @@ const about = () => {
               initial="hidden"
               whileInView="visible"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
+              I'm always eager to learn and grow, constantly seeking new
+              challenges and opportunities to push my boundaries and contribute
+              to meaningful projects. Whether you're looking for a skilled
+              developer to bring your vision to life or a passionate
+              collaborator to join your team, I'm confident in my ability to
+              deliver exceptional results.
             </motion.p>
             <ul className="about-list d-flex flex-wrap w-100 mb-4">
               <motion.li

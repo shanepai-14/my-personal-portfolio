@@ -32,10 +32,11 @@ const Footer = () => {
           >
             <h1>Have a project idea. Let's work together!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium esse dolor omnis nam laudantium accusantium quaerat
-              commodi fuga dignissimos deleniti ipsa sint exercitationem,
-              laboriosam a impedit est dolores voluptatibus vero?
+              As a web developer, I am passionate about turning ideas into
+              reality. Whether you need a new website, an e-commerce platform,
+              or a custom web application, I have the skills and expertise to
+              bring your vision to life. Let's collaborate and create something
+              amazing together!
             </p>
           </motion.div>
           <div className="col ">
@@ -97,10 +98,12 @@ const Footer = () => {
               transition={{
                 delay: 0.2,
               }}
+              className="shanepai-p"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium esse dolor omnis nam laudantium accusantium quaerat
-              commodi fuga dignissimos deleniti ipsa s
+              My journey in web development began when I enrolled as a BSIT
+              student. Since then, I've honed my skills and expanded my
+              knowledge to encompass various technologies and frameworks,
+              including React, Laravel, Next.js, Tailwind, and Firebase.
             </motion.p>
             <motion.ul
               initial={{ x: 20, opacity: 0 }}
@@ -201,10 +204,10 @@ const Footer = () => {
                 delay: 0.2,
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium esse dolor omnis nam laudantium accusantium quaerat
-              commodi fuga dignissimos deleniti ipsa sint exercitationem,
-              laboriosam a impedit est dolores voluptatibus vero?
+              I am a web developer seeking an internship to gain hands-on
+              experience and refine my skills. If you are looking for a
+              motivated intern to join your team, let's connect and discuss how
+              I can contribute to your organization.
             </motion.p>
           </div>
         </div>

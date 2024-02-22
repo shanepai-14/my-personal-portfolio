@@ -105,9 +105,8 @@ const Hero = () => {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
+              Transforming ideas into reality through creative and user-centric
+              web development.
             </motion.p>
             <ul className="list-unstyled gap-3 d-flex justify-content-center">
               <motion.li
