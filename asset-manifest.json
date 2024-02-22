@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.156f4e61.css",
-    "main.js": "/static/js/main.e3b77325.js",
+    "main.js": "/static/js/main.12119a64.js",
     "static/media/aboutimg.jpg": "/static/media/aboutimg.fe11031b236f5479efc9.jpg",
     "static/media/hero-image.png": "/static/media/hero-image.42e05cc0ef67cbb5f80c.png",
     "static/media/hero-image -tablet.png": "/static/media/hero-image -tablet.adc76f740b24a15e8f24.png",
@@ -20,7 +20,7 @@
     "static/media/davaovision.png": "/static/media/davaovision.cb570dbb021eb5021fd1.png",
     "static/media/qrattendance.png": "/static/media/qrattendance.7a26d8dada69650a437c.png",
     "static/media/bestincapstone.jpg": "/static/media/bestincapstone.e51f860971becc710142.jpg",
-    "static/media/SHANE ENRIQUEZ-WEB DEV.pdf": "/static/media/SHANE ENRIQUEZ-WEB DEV.0f39d4891cbac813646f.pdf",
+    "static/media/Shane F. Enriquez CV.pdf": "/static/media/Shane F. Enriquez CV.5d241aaeaa854201de00.pdf",
     "static/media/vscode.svg": "/static/media/vscode.648a607155a083161815ee3b691d3516.svg",
     "static/media/react-2.svg": "/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/laravel1.svg": "/static/media/laravel1.d0cb2f2a087d322fda99dbfed23efe11.svg",
@@ -31,10 +31,10 @@
     "static/media/about4.svg": "/static/media/about4.58e14add17823cfb0592.svg",
     "static/media/flutter-logo.svg": "/static/media/flutter-logo.83219c099347619051f3aa0fa0e2108e.svg",
     "main.156f4e61.css.map": "/static/css/main.156f4e61.css.map",
-    "main.e3b77325.js.map": "/static/js/main.e3b77325.js.map"
+    "main.12119a64.js.map": "/static/js/main.12119a64.js.map"
   },
   "entrypoints": [
     "static/css/main.156f4e61.css",
-    "static/js/main.e3b77325.js"
+    "static/js/main.12119a64.js"
   ]
 }
