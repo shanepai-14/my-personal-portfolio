@@ -2,9 +2,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import React, { useState, useEffect } from "react";
-import Downloadcv from "./downloadcv";
+import Downloadcv from "./downloadcv.js";
 import { MdOutlineEmail } from "react-icons/md";
-import { item, HeaderAnimation } from "../components/animation/animation.js";
+import { item, HeaderAnimation } from "./animation/animation.js";
 import { motion } from "framer-motion";
 function BasicExample() {
   const [scrolled, setScrolled] = useState(false);

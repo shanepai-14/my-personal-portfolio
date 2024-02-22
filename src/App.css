@@ -732,6 +732,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
   animation: square-animation 10s ease-in-out infinite both;
 }
 
