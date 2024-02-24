@@ -78,7 +78,7 @@ function BasicExample() {
               <Nav.Link href="#about">
                 {" "}
                 <motion.p viewport={{ once: true }} variants={item}>
-                  About me
+                  About Me
                 </motion.p>
               </Nav.Link>
               <Nav.Link href="#projects">
@@ -90,7 +90,7 @@ function BasicExample() {
               <Nav.Link href="#contact-me">
                 {" "}
                 <motion.p viewport={{ once: true }} variants={item}>
-                  Contact me
+                  Contact Me
                 </motion.p>
               </Nav.Link>
             </Nav>

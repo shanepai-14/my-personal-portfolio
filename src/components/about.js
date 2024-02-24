@@ -38,7 +38,7 @@ const about = () => {
               initial="hidden"
               whileInView="visible"
             >
-              ABOUT ME
+              About Me
             </motion.h3>
             <motion.h1
               className="mb-5"

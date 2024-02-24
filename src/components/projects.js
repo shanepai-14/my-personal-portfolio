@@ -7,7 +7,7 @@ import Dvc from "../images/projects/davaovision.png";
 import Myportfolio from "../images/projects/myportfolio.png";
 import Webstudio from "../images/projects/webstudio.png";
 import Qrattendance from "../images/projects/qrattendance.png";
-import FlutterResume from "../images/projects/FlutterResume.png";
+import FlutterResume from "../images/projects/flutterresume.png";
 import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
 import Simply from "../images/projects/simplycholate.png";

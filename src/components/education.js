@@ -2,8 +2,6 @@ import React from "react";
 import {
   Navigation,
   Pagination,
-  Scrollbar,
-  A11y,
   Parallax,
   Autoplay,
 } from "swiper/modules";

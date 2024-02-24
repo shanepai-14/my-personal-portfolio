@@ -2,8 +2,8 @@ import React from "react";
 import { Facebook, Github, Linkedin } from "react-bootstrap-icons";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
-import { useInView, motion } from "framer-motion";
-import { HeaderAnimation, itemVariants } from "./animation/animation";
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
     <footer className="">
@@ -114,20 +114,20 @@ const Footer = () => {
               className="list-unstyled social-links  mb-0 gap-3 mt-4"
             >
               <li>
-                <a href="https://github.com/shanepai-14" target="_blank">
+                <a href="https://github.com/shanepai-14" rel="noreferrer" target="_blank">
                   <Github color="black" size={28} />
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/shane-enriquez-2927a1254/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <Linkedin color="black" size={28} />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/pee.poy.98" target="_blank">
+                <a href="https://www.facebook.com/pee.poy.98" rel="noreferrer" target="_blank">
                   <Facebook color="black" size={28} />
                 </a>
               </li>
