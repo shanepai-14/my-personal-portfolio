@@ -36,14 +36,14 @@ const Projects = () => {
       },
       {
         title: "PPRD for DEPED",
-        imageurl: PPRD,
+        imageurl: Pprd,
         stack: ["laravel", "tailwind","livewire",'Alphine'],
         githubUrl: "https://github.com/shanepai-14/pprd-admin-prod",
         liveUrl: "#",
       },
       {
         title: "Nsmartrac",
-        imageurl: Nsmartrack,
+        imageurl: Nsmartrac,
         stack: ["Codeigniter", "bootstrap","javascript"],
         githubUrl: "#",
         liveUrl: "https://nsmartrac.com/#",
