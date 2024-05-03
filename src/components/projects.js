@@ -30,7 +30,7 @@ const Projects = () => {
       {
         title: "SparkPro",
         imageurl: SparkPro,
-        stack: ["laravel", "bootstrap"],
+        stack: ["laravel", "bootstrap",'javascript'],
         githubUrl: "#",
         liveUrl: "https://staging.sprkpro.com/",
       },
