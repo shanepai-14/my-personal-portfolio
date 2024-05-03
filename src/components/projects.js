@@ -12,6 +12,9 @@ import IdEditor from "../images/projects/idEditor.png";
 import MovieApp from "../images/projects/movieapp.png";
 import Simply from "../images/projects/simplycholate.png";
 import Apexpoint from "../images/projects/apexpoint.png";
+import Nsmartrac from "../images/projects/nsmartrac.png";
+import SparkPro from "../images/projects/spartpro.png";
+import Pprd from "../images/projects/pprd.png";
 import {
   ProjectVariants,
   headAnimation,
@@ -23,6 +26,28 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true });
   const projects_list = {
     result: [
+      
+      {
+        title: "SparkPro",
+        imageurl: SparkPro,
+        stack: ["laravel", "bootstrap"],
+        githubUrl: "#",
+        liveUrl: "https://staging.sprkpro.com/",
+      },
+      {
+        title: "PPRD for DEPED",
+        imageurl: PPRD,
+        stack: ["laravel", "tailwind","livewire",'Alphine'],
+        githubUrl: "https://github.com/shanepai-14/pprd-admin-prod",
+        liveUrl: "#",
+      },
+      {
+        title: "Nsmartrac",
+        imageurl: Nsmartrack,
+        stack: ["Codeigniter", "bootstrap","javascript"],
+        githubUrl: "#",
+        liveUrl: "https://nsmartrac.com/#",
+      },
       {
         title: "Apexpoint",
         imageurl: Apexpoint,
