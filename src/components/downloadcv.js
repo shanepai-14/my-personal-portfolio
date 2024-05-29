@@ -7,7 +7,7 @@ const handleDownloadCV = () => {
   const cvUrl = cv;
   const link = document.createElement("a");
   link.href = cvUrl;
-  link.download = "my-cv.pdf";
+  link.download = "Shane F. Enriquez.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

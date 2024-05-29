@@ -15,6 +15,10 @@ import Apexpoint from "../images/projects/apexpoint.png";
 import Nsmartrac from "../images/projects/nsmartrac.png";
 import SparkPro from "../images/projects/spartpro.png";
 import Pprd from "../images/projects/pprd.png";
+import PprdApp from "../images/projects/pprd_react.png";
+import VismotorApp from "../images/projects/vistomor_app.png";
+import VismotorLaravel from "../images/projects/vismotor_laravel.png";
+import Filmoteka from "../images/projects/filmoteka.png";
 import {
   ProjectVariants,
   headAnimation,
@@ -26,14 +30,28 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true });
   const projects_list = {
     result: [
-      
       {
-        title: "SparkPro",
-        imageurl: SparkPro,
-        stack: ["laravel", "bootstrap",'javascript'],
-        githubUrl: "#",
-        liveUrl: "https://staging.sprkpro.com/",
+        title: "Vismotor App",
+        imageurl: VismotorApp,
+        stack: ["react",'Material UI', "tailwind","Laravel Rest Api"],
+        githubUrl: "https://github.com/shanepai-14/vismotors-app",
+        liveUrl: "https://shanepai-14.github.io/vismotors-app/",
       },
+      {
+        title: "Vismotor Admin",
+        imageurl: VismotorLaravel,
+        stack: ["laravel", "tailwind","Blade","Breeze"],
+        githubUrl: "https://github.com/shanepai-14/vismotors-laravel",
+        liveUrl: "http://vismotor.services/",
+      },
+      {
+        title: "PPRD Homepage for DEPED",
+        imageurl: PprdApp,
+        stack: ["react", "tailwind","Laravel Rest Api"],
+        githubUrl: "#",
+        liveUrl: "#",
+      },
+     
       {
         title: "PPRD for DEPED",
         imageurl: Pprd,
@@ -42,11 +60,25 @@ const Projects = () => {
         liveUrl: "#",
       },
       {
+        title: "Filmoteka Team Project",
+        imageurl: Filmoteka,
+        stack: ["html", "css","javascript",'parcel','Movie API'],
+        githubUrl: "https://github.com/shanepai-14/filmoteka-js-team-4",
+        liveUrl: "https://shanepai-14.github.io/filmoteka-js-team-4/",
+      },
+      {
         title: "Nsmartrac",
         imageurl: Nsmartrac,
         stack: ["Codeigniter", "bootstrap","javascript"],
         githubUrl: "#",
         liveUrl: "https://nsmartrac.com/#",
+      },
+      {
+        title: "SparkPro",
+        imageurl: SparkPro,
+        stack: ["laravel", "bootstrap",'javascript'],
+        githubUrl: "#",
+        liveUrl: "https://staging.sprkpro.com/",
       },
       {
         title: "Apexpoint",
