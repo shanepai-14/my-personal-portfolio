@@ -1,29 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.156f4e61.css",
-    "main.js": "/static/js/main.e0eed539.js",
+    "main.js": "/static/js/main.298cbcd3.js",
     "static/media/aboutimg.jpg": "/static/media/aboutimg.fe11031b236f5479efc9.jpg",
     "static/media/hero-image.png": "/static/media/hero-image.42e05cc0ef67cbb5f80c.png",
     "static/media/hero-image -tablet.png": "/static/media/hero-image -tablet.adc76f740b24a15e8f24.png",
     "static/media/simplycholate.png": "/static/media/simplycholate.8d1fc79b8d3cfa472468.png",
+    "static/media/filmoteka.png": "/static/media/filmoteka.199f6df255b2bcde1081.png",
     "static/media/hris-login.png": "/static/media/hris-login.2b957feff7519a11776f.png",
     "static/media/webstudio.png": "/static/media/webstudio.0dea50297291ff731887.png",
     "static/media/movieapp.png": "/static/media/movieapp.13c5951616b5a8be86e4.png",
     "static/media/seteafyhero.png": "/static/media/seteafyhero.63aa1aa97a7552cda89d.png",
     "static/media/philma.png": "/static/media/philma.907ae2e3833f108df0f4.png",
+    "static/media/pprd_react.png": "/static/media/pprd_react.5a1bc32e804d2a7fa934.png",
     "static/media/myportfolio.png": "/static/media/myportfolio.15e666be99ca8db37925.png",
     "static/media/dict.jpg": "/static/media/dict.e189bf730556e4cda8cb.jpg",
     "static/media/flutterresume.png": "/static/media/flutterresume.01d7afd4b31e0ea8faeb.png",
     "static/media/devfest.jpg": "/static/media/devfest.fcc45413038acc1502fa.jpg",
+    "static/media/vistomor_app.png": "/static/media/vistomor_app.c1a48aad19a1ec5afb06.png",
     "static/media/idEditor.png": "/static/media/idEditor.ab323ae14286a1c492db.png",
     "static/media/apexpoint.png": "/static/media/apexpoint.29f4fb50915d1c179304.png",
     "static/media/davaovision.png": "/static/media/davaovision.cb570dbb021eb5021fd1.png",
     "static/media/qrattendance.png": "/static/media/qrattendance.7a26d8dada69650a437c.png",
     "static/media/bestincapstone.jpg": "/static/media/bestincapstone.e51f860971becc710142.jpg",
     "static/media/nsmartrac.png": "/static/media/nsmartrac.18e2e11d637e928b99d5.png",
-    "static/media/Shane F. Enriquez CV.pdf": "/static/media/Shane F. Enriquez CV.5d241aaeaa854201de00.pdf",
+    "static/media/vismotor_laravel.png": "/static/media/vismotor_laravel.854847f720e1c3493987.png",
     "static/media/spartpro.png": "/static/media/spartpro.3a32a867618ed6f83585.png",
     "static/media/pprd.png": "/static/media/pprd.0c04150871bb653d7d8d.png",
+    "static/media/Shane F. Enriquez CV.pdf": "/static/media/Shane F. Enriquez CV.a27342b7cc16b2e0e774.pdf",
     "static/media/vscode.svg": "/static/media/vscode.648a607155a083161815ee3b691d3516.svg",
     "static/media/react-2.svg": "/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/laravel1.svg": "/static/media/laravel1.d0cb2f2a087d322fda99dbfed23efe11.svg",
@@ -34,10 +38,10 @@
     "static/media/about4.svg": "/static/media/about4.58e14add17823cfb0592.svg",
     "static/media/flutter-logo.svg": "/static/media/flutter-logo.83219c099347619051f3aa0fa0e2108e.svg",
     "main.156f4e61.css.map": "/static/css/main.156f4e61.css.map",
-    "main.e0eed539.js.map": "/static/js/main.e0eed539.js.map"
+    "main.298cbcd3.js.map": "/static/js/main.298cbcd3.js.map"
   },
   "entrypoints": [
     "static/css/main.156f4e61.css",
-    "static/js/main.e0eed539.js"
+    "static/js/main.298cbcd3.js"
   ]
 }
