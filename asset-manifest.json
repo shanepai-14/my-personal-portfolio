@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.156f4e61.css",
-    "main.js": "/static/js/main.298cbcd3.js",
+    "main.js": "/static/js/main.26a4c7c4.js",
     "static/media/aboutimg.jpg": "/static/media/aboutimg.fe11031b236f5479efc9.jpg",
     "static/media/hero-image.png": "/static/media/hero-image.42e05cc0ef67cbb5f80c.png",
     "static/media/hero-image -tablet.png": "/static/media/hero-image -tablet.adc76f740b24a15e8f24.png",
@@ -27,7 +27,7 @@
     "static/media/vismotor_laravel.png": "/static/media/vismotor_laravel.854847f720e1c3493987.png",
     "static/media/spartpro.png": "/static/media/spartpro.3a32a867618ed6f83585.png",
     "static/media/pprd.png": "/static/media/pprd.0c04150871bb653d7d8d.png",
-    "static/media/Shane F. Enriquez CV.pdf": "/static/media/Shane F. Enriquez CV.a27342b7cc16b2e0e774.pdf",
+    "static/media/Shane F. Enriquez CV.pdf": "/static/media/Shane F. Enriquez CV.3414809b25c7efbc6f86.pdf",
     "static/media/vscode.svg": "/static/media/vscode.648a607155a083161815ee3b691d3516.svg",
     "static/media/react-2.svg": "/static/media/react-2.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/laravel1.svg": "/static/media/laravel1.d0cb2f2a087d322fda99dbfed23efe11.svg",
@@ -38,10 +38,10 @@
     "static/media/about4.svg": "/static/media/about4.58e14add17823cfb0592.svg",
     "static/media/flutter-logo.svg": "/static/media/flutter-logo.83219c099347619051f3aa0fa0e2108e.svg",
     "main.156f4e61.css.map": "/static/css/main.156f4e61.css.map",
-    "main.298cbcd3.js.map": "/static/js/main.298cbcd3.js.map"
+    "main.26a4c7c4.js.map": "/static/js/main.26a4c7c4.js.map"
   },
   "entrypoints": [
     "static/css/main.156f4e61.css",
-    "static/js/main.298cbcd3.js"
+    "static/js/main.26a4c7c4.js"
   ]
 }
