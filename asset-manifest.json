@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-personal-portfolio/static/css/main.ba178615.css",
-    "main.js": "/my-personal-portfolio/static/js/main.d2a489c0.js",
+    "main.js": "/my-personal-portfolio/static/js/main.7115c8b3.js",
     "static/media/aboutimg.jpg": "/my-personal-portfolio/static/media/aboutimg.fe11031b236f5479efc9.jpg",
     "static/media/hero-image.png": "/my-personal-portfolio/static/media/hero-image.42e05cc0ef67cbb5f80c.png",
     "static/media/hero-image -tablet.png": "/my-personal-portfolio/static/media/hero-image -tablet.adc76f740b24a15e8f24.png",
@@ -25,7 +25,9 @@
     "static/media/bestincapstone.jpg": "/my-personal-portfolio/static/media/bestincapstone.e51f860971becc710142.jpg",
     "static/media/nsmartrac.png": "/my-personal-portfolio/static/media/nsmartrac.18e2e11d637e928b99d5.png",
     "static/media/vismotor_laravel.png": "/my-personal-portfolio/static/media/vismotor_laravel.854847f720e1c3493987.png",
+    "static/media/atss.png": "/my-personal-portfolio/static/media/atss.9fffb7a39c3ce1627a36.png",
     "static/media/spartpro.png": "/my-personal-portfolio/static/media/spartpro.3a32a867618ed6f83585.png",
+    "static/media/halifax.png": "/my-personal-portfolio/static/media/halifax.99a2c419d02d814a3c2e.png",
     "static/media/pprd.png": "/my-personal-portfolio/static/media/pprd.0c04150871bb653d7d8d.png",
     "static/media/Shane F. Enriquez CV.pdf": "/my-personal-portfolio/static/media/Shane F. Enriquez CV.3414809b25c7efbc6f86.pdf",
     "static/media/vscode.svg": "/my-personal-portfolio/static/media/vscode.648a607155a083161815ee3b691d3516.svg",
@@ -38,10 +40,10 @@
     "static/media/about4.svg": "/my-personal-portfolio/static/media/about4.58e14add17823cfb0592.svg",
     "static/media/flutter-logo.svg": "/my-personal-portfolio/static/media/flutter-logo.83219c099347619051f3aa0fa0e2108e.svg",
     "main.ba178615.css.map": "/my-personal-portfolio/static/css/main.ba178615.css.map",
-    "main.d2a489c0.js.map": "/my-personal-portfolio/static/js/main.d2a489c0.js.map"
+    "main.7115c8b3.js.map": "/my-personal-portfolio/static/js/main.7115c8b3.js.map"
   },
   "entrypoints": [
     "static/css/main.ba178615.css",
-    "static/js/main.d2a489c0.js"
+    "static/js/main.7115c8b3.js"
   ]
 }
