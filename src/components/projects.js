@@ -19,6 +19,8 @@ import PprdApp from "../images/projects/pprd_react.png";
 import VismotorApp from "../images/projects/vistomor_app.png";
 import VismotorLaravel from "../images/projects/vismotor_laravel.png";
 import Filmoteka from "../images/projects/filmoteka.png";
+import Atss from "../images/projects/atss.png";
+import Halifax from "../images/projects/halifax.png";
 import {
   ProjectVariants,
   headAnimation,
@@ -30,6 +32,20 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true });
   const projects_list = {
     result: [
+        {
+        title: "Halifax Sales and Inventory System",
+        imageurl: Halifax,
+        stack: ["react",'Material UI',"Laravel Rest Api"],
+        githubUrl: "https://github.com/shanepai-14/halifax-system-fe",
+        liveUrl: "https://glasshalifax.site/",
+      },
+          {
+        title: "Vehicle Queue Attendance System",
+        imageurl: Atss,
+        stack: ["react",'Material UI',"Laravel Rest Api"],
+        githubUrl: "#",
+        liveUrl: "https://alpha.w-locate.com/",
+      },
       {
         title: "Vismotor App",
         imageurl: VismotorApp,
