@@ -32,11 +32,11 @@ const Footer = () => {
           >
             <h1>Have a project idea. Let's work together!</h1>
             <p>
-              As a web developer, I am passionate about turning ideas into
-              reality. Whether you need a new website, an e-commerce platform,
-              or a custom web application, I have the skills and expertise to
-              bring your vision to life. Let's collaborate and create something
-              amazing together!
+              As a full-stack developer, I am passionate about turning ideas
+              into reality. Whether you need a new website, an e-commerce
+              platform, or a custom web application, I have the skills and
+              expertise to bring your vision to life. Let's collaborate and
+              create something amazing together!
             </p>
           </motion.div>
           <div className="col ">
@@ -195,7 +195,7 @@ const Footer = () => {
               }}
               className="mb-4"
             >
-              Intership
+              Availability
             </motion.h5>
             <motion.p
               initial={{ x: 20, opacity: 0 }}
@@ -204,10 +204,10 @@ const Footer = () => {
                 delay: 0.2,
               }}
             >
-              I am a web developer seeking an internship to gain hands-on
-              experience and refine my skills. If you are looking for a
-              motivated intern to join your team, let's connect and discuss how
-              I can contribute to your organization.
+              I'm a Full-Stack Developer open to new full-time roles and
+              freelance projects. If you're looking for someone to build and
+              maintain your web application, let's connect and discuss how I
+              can contribute to your team.
             </motion.p>
           </div>
         </div>

@@ -19,6 +19,7 @@ const about = () => {
               whileInView="visible"
               src={AboutImage}
               width={"70%"}
+              alt="Shane Enriquez"
             ></motion.img>
           </div>
           <motion.div
@@ -32,6 +33,7 @@ const about = () => {
               width={"70%"}
               loading="lazy"
               className="myself-img-about"
+              alt=""
             ></img>
             <motion.h3
               variants={aboutItem}
@@ -46,7 +48,7 @@ const about = () => {
               initial="hidden"
               whileInView="visible"
             >
-              I'm Shane Enriquez<br></br> a Web Developer
+              I'm Shane Enriquez<br></br> a Full-Stack Developer
             </motion.h1>
             <motion.p
               className="mb-5"
@@ -74,7 +76,7 @@ const about = () => {
                 initial="hidden"
                 whileInView="visible"
               >
-                shaneenriquez50gmail.com
+                shaneenriquez50@gmail.com
               </motion.li>
               <motion.li
                 variants={aboutItem}
@@ -107,7 +109,11 @@ const about = () => {
                   initial="hidden"
                   whileInView="visible"
                 >
-                  <a href="https://github.com/shanepai-14" target="_blank">
+                  <a
+                    href="https://github.com/shanepai-14"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {" "}
                     <Github color="black" size={28} />
                   </a>
@@ -118,8 +124,9 @@ const about = () => {
                   whileInView="visible"
                 >
                   <a
-                    href="https://www.motion.linkedin.com/in/shane-enriquez-2927a1254/"
+                    href="https://www.linkedin.com/in/shane-enriquez-2927a1254/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {" "}
                     <Linkedin color="#0C64C5" size={28} />
@@ -130,7 +137,11 @@ const about = () => {
                   initial="hidden"
                   whileInView="visible"
                 >
-                  <a href="https://www.facebook.com/pee.poy.98" target="_blank">
+                  <a
+                    href="https://www.facebook.com/pee.poy.98"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {" "}
                     <Facebook color="#0866FF" size={28} />
                   </a>

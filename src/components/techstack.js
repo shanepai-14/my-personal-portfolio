@@ -9,13 +9,23 @@ import { FaReact } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { SiJquery, SiTailwindcss } from "react-icons/si";
+import {
+  SiJquery,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMui,
+  SiDocker,
+  SiLinux,
+  SiVuedotjs,
+} from "react-icons/si";
+import { MdOutlineCloud } from "react-icons/md";
 import {
   HeaderAnimation,
   headAnimation,
   itemVariants,
 } from "./animation/animation";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 const TechStack = () => {
   return (
     <section className="tect-stack">
@@ -68,8 +78,36 @@ const TechStack = () => {
               <p>REACT</p>
             </motion.li>
             <motion.li variants={itemVariants}>
+              <SiVuedotjs size={50} />
+              <p>VUE</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <SiNextdotjs size={50} />
+              <p>NEXT.JS</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <SiTypescript size={50} />
+              <p>TYPESCRIPT</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <SiMui size={50} />
+              <p>MUI</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <SiFlutter size={50} />
               <p>FLUTTER</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <SiDocker size={50} />
+              <p>DOCKER</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <SiLinux size={50} />
+              <p>LINUX</p>
+            </motion.li>
+            <motion.li variants={itemVariants}>
+              <MdOutlineCloud size={50} />
+              <p>LARAVEL CLOUD</p>
             </motion.li>
             <motion.li variants={itemVariants}>
               <SiFirebase size={50} />

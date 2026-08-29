@@ -6,19 +6,12 @@ import Vscode from "../images/icons/vscode.svg";
 import Javascript from "../images/icons/logo-javascript.svg";
 import Reactlogo from "../images/icons/react-2.svg";
 import Flutter from "../images/icons/flutter-logo.svg";
+import Vue from "../images/icons/vue.svg";
 import Downloadcv from "./downloadcv";
 import { FiPhone } from "react-icons/fi";
-import {
-  fadeInOutRightToLeft,
-  fadeInOutLeftToRight,
-  fadeInOutUpToDown,
-  fadeInOutDownToUp,
-  item,
-  listVariants,
-  itemVariants,
-} from "../components/animation/animation.js";
-import { useInView, motion } from "framer-motion";
-const FloatingIcon = ({ icon }) => {
+import { listVariants, itemVariants } from "../components/animation/animation.js";
+import { motion } from "framer-motion";
+const FloatingIcon = ({ icon, alt }) => {
   const iconRef = useRef(null);
 
   useEffect(() => {
@@ -39,6 +32,7 @@ const FloatingIcon = ({ icon }) => {
       loading="lazy"
       width={50}
       height={50}
+      alt={alt}
       style={{ background: "white", padding: "7px" }}
     ></img>
   );
@@ -46,30 +40,30 @@ const FloatingIcon = ({ icon }) => {
 const techstack = [
   {
     icon: Laravel,
+    label: "Laravel",
   },
   {
     icon: Vscode,
+    label: "VS Code",
   },
   {
     icon: Javascript,
+    label: "JavaScript",
   },
   {
     icon: Reactlogo,
+    label: "React",
   },
   {
     icon: Flutter,
+    label: "Flutter",
+  },
+  {
+    icon: Vue,
+    label: "Vue",
   },
 ];
 const Hero = () => {
-  const ref = useRef(null);
-  const inView = useInView({ threshold: 0.5 }); // Adjust threshold as needed
-  const [rotate, setRotate] = React.useState(false);
-  useEffect(() => {
-    if (inView.isIntersecting) {
-      // Animate element after it comes into view
-    }
-  }, [inView.isIntersecting]);
-
   return (
     <section className="hero" id="home">
       <div className="container h-100">
@@ -94,7 +88,7 @@ const Hero = () => {
               }}
             >
               I'm Shane Enriquez <br></br>a{" "}
-              <span className="webdev">Web Developer</span>
+              <span className="webdev">Full-Stack Developer</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, x: -25 }}
@@ -154,7 +148,11 @@ const Hero = () => {
                       whileInView="visible"
                       className="position-absolute hero-icons"
                     >
-                      <FloatingIcon loading="lazy" icon={icon.icon} />
+                      <FloatingIcon
+                        loading="lazy"
+                        icon={icon.icon}
+                        alt={icon.label}
+                      />
                     </motion.div>
                   </>
                 ))}
@@ -164,12 +162,6 @@ const Hero = () => {
                 <h2>No Icon Found</h2>
               </div>
             )}
-
-            {/* <FloatingIcon loading="lazy" icon={Laravel} />
-              <FloatingIcon loading="lazy" icon={Vscode} />
-              <FloatingIcon loading="lazy" icon={Javascript} />
-              <FloatingIcon loading="lazy" icon={Reactlogo} />
-              <FloatingIcon loading="lazy" icon={Flutter} /> */}
 
             <motion.img
               initial={{ opacity: 0, x: 50 }}
@@ -182,6 +174,7 @@ const Hero = () => {
               src={HeroImage}
               width={"100%"}
               loading="lazy"
+              alt="Portrait of Shane Enriquez"
               className="object-fit-cover h-100 heroimage"
             ></motion.img>
 
@@ -196,6 +189,7 @@ const Hero = () => {
               src={HeroTablet}
               loading="lazy"
               width={"100%"}
+              alt="Portrait of Shane Enriquez"
               className="herotablet"
             ></motion.img>
           </motion.div>

@@ -81,6 +81,12 @@ function BasicExample() {
                   About Me
                 </motion.p>
               </Nav.Link>
+              <Nav.Link href="#experience">
+                {" "}
+                <motion.p viewport={{ once: true }} variants={item}>
+                  Experience
+                </motion.p>
+              </Nav.Link>
               <Nav.Link href="#projects">
                 {" "}
                 <motion.p viewport={{ once: true }} variants={item}>
