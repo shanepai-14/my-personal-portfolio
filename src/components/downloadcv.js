@@ -12,9 +12,12 @@ const handleDownloadCV = () => {
   document.body.removeChild(link);
 };
 
-const downloadcv = () => {
+const downloadcv = ({ className }) => {
   return (
-    <button className="downloadcv" onClick={handleDownloadCV}>
+    <button
+      className={className ? className : "downloadcv"}
+      onClick={handleDownloadCV}
+    >
       Download CV <MdOutlineFileDownload />
     </button>
   );

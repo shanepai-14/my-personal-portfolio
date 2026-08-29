@@ -1,111 +1,144 @@
-import React from "react";
-import {
-  Navigation,
-  Pagination,
-  Parallax,
-  Autoplay,
-} from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { GiGraduateCap } from "react-icons/gi";
-import Dcit from "../images/certifications/dict.jpg";
-import Dvc from "../images/certifications/bestincapstone.jpg";
+import React, { useState } from "react";
+import Goit from "../images/certifications/goit.jpg";
+import Dict from "../images/certifications/dict.jpg";
+import BestInCapstone from "../images/certifications/bestincapstone.jpg";
 import Devfest from "../images/certifications/devfest.jpg";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import { motion } from "framer-motion";
-const education = () => {
+
+const education_list = [
+  {
+    dates: "2023 – 2024",
+    title: "Fullstack Web Developer",
+    institution: "GOIT PH · HTML/CSS, JavaScript, React, Node.js",
+    certUrl: null,
+  },
+  {
+    dates: "2022 – 2023",
+    title: "BS in Information Technology",
+    institution: "Davao Vision College",
+    certUrl: null,
+  },
+  {
+    dates: "2017 – 2018",
+    title: "Tech-Voc Livelihood in Computer Systems Servicing",
+    institution: "F. Bustamante National High School",
+    certUrl: null,
+  },
+];
+
+const slides = [
+  {
+    img: Goit,
+    alt: "GoIT Fullstack Developer course completion certificate, 2024",
+    caption: "GoIT — Fullstack Developer course (2024)",
+  },
+  {
+    img: Dict,
+    alt: "DICT Mobile App Development certificate from DigitalJobsPH",
+    caption: "DICT — Mobile App Development (DigitalJobsPH)",
+  },
+  {
+    img: BestInCapstone,
+    alt: "Best in Capstone award certificate",
+    caption: "Best in Capstone",
+  },
+  {
+    img: Devfest,
+    alt: "Google DevFest certificate",
+    caption: "Google DevFest",
+  },
+];
+
+const Education = () => {
+  const [index, setIndex] = useState(0);
+
+  const goPrev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
+  const goNext = () => setIndex((i) => (i + 1) % slides.length);
+
+  const current = slides[index];
+
   return (
-    <section className="educ pb-5" id="education">
-      <div className="container">
-        <div className="row">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            // viewport={{ once: true }}
-            className="swiper-col col-lg-6 "
-          >
-            <Swiper
-              // install Swiper modules
-              modules={[Navigation, Pagination, Parallax, Autoplay]}
-              spaceBetween={50}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={
-                {
-                  delay: 3000, // Set the delay in milliseconds
-                  disableOnInteraction: false,
-                } // Allow navigation when user interacts with the swiper
-              }
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
+    <section className="credentials-sec" id="education">
+      <div className="container credentials-container">
+        <h2>Education &amp; credentials</h2>
+        <div className="credentials-grid">
+          <div className="credentials-col">
+            <ul className="edu-list">
+              {education_list.map((item, i) => (
+                <li className="edu-row" key={i}>
+                  <span className="edu-date">{item.dates}</span>
+                  <h3 className="edu-title">{item.title}</h3>
+                  <p className="edu-institution">{item.institution}</p>
+                  {item.certUrl && (
+                    <a
+                      className="edu-cert-link"
+                      href={item.certUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Certificate ID 33496 (PDF) ↗
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="credentials-col">
+            <div className="cert-header">
+              <span className="cert-label">Certificates</span>
+              <div className="cert-nav">
+                <button
+                  type="button"
+                  className="cert-nav-btn"
+                  onClick={goPrev}
+                  aria-label="Previous certificate"
+                >
+                  ←
+                </button>
+                <button
+                  type="button"
+                  className="cert-nav-btn"
+                  onClick={goNext}
+                  aria-label="Next certificate"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+
+            <a
+              className="cert-frame"
+              href={current.img}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open full size: ${current.caption}`}
             >
-              <SwiperSlide>
-                <img src={Dcit} loading="lazy" width={"100%"} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={Dvc} loading="lazy" width={"100%"} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={Devfest} loading="lazy" width={"100%"} />
-              </SwiperSlide>
-            </Swiper>
-          </motion.div>
-          <div className="col p-3">
-            <h3 className="educ-h3 mb-5">My Education</h3>
-            <motion.ul
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                ease: "linear",
-                staggerChildren: 5,
-              }}
-              className="educ-list d-flex flex-column "
-            >
-              <motion.li
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className=" p-2  "
-              >
-                <GiGraduateCap className="graduate" size={50} />
+              <motion.img
+                key={index}
+                src={current.img}
+                alt={current.alt}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.25 }}
+              />
+            </a>
 
-                <strong className="title"> GOIT PH (2023-Present)</strong>
-
-                <p className="course">FULLSTACK WEB DEVELOPER</p>
-              </motion.li>
-              <motion.li
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className="   p-2  "
-              >
-                <GiGraduateCap className="graduate" size={50} />
-
-                <strong className="title">
-                  {" "}
-                  Davao Vision College (2022-2023)
-                </strong>
-
-                <p className="course">
-                  Bachelor Of Science In Information Technology
-                </p>
-              </motion.li>
-              <motion.li
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className=" p-2 "
-              >
-                <GiGraduateCap className="graduate" size={50} />
-                <strong className="title">
-                  {" "}
-                  F. Bustamante National Highschool
-                </strong>{" "}
-                (2017-2018)
-                <p className="course">
-                  TECH-VOC Livelihood In Computer Systems Servicing
-                </p>
-              </motion.li>
-            </motion.ul>
+            <div className="cert-footer">
+              <span className="cert-caption">{current.caption}</span>
+              <div className="cert-dots">
+                {slides.map((slide, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    className={`cert-dot ${i === index ? "active" : ""}`}
+                    onClick={() => setIndex(i)}
+                    aria-label={`Show certificate ${i + 1}: ${slide.caption}`}
+                    aria-current={i === index}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -113,4 +146,4 @@ const education = () => {
   );
 };
 
-export default education;
+export default Education;

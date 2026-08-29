@@ -1,142 +1,67 @@
 import React from "react";
-import Downloadcv from "./downloadcv";
 import AboutImage from "../images/aboutimg.jpg";
-import { Facebook } from "react-bootstrap-icons";
-import { Github } from "react-bootstrap-icons";
-import { Linkedin } from "react-bootstrap-icons";
-import { HiOutlineChevronDoubleRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
-import { LeftRight, AboutContainer, aboutItem } from "./animation/animation";
-const about = () => {
+import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
+
+const About = () => {
   return (
     <section className="about-sec" id="about">
-      <div className="container p-5">
-        <div className="row myself">
-          <div className="col myselft-img">
-            <motion.img
-              variants={LeftRight}
-              initial="hidden"
-              whileInView="visible"
-              src={AboutImage}
-              width={"70%"}
-            ></motion.img>
-          </div>
+      <div className="container">
+        <div className="row align-items-center">
           <motion.div
-            variants={AboutContainer}
-            initial="hidden"
-            whileInView="visible"
-            className="col d-flex flex-column justify-content-center"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="col-lg-4 d-flex justify-content-center justify-content-lg-start"
           >
             <img
               src={AboutImage}
-              width={"70%"}
+              alt="Shane Enriquez"
+              className="about-portrait"
               loading="lazy"
-              className="myself-img-about"
-            ></img>
-            <motion.h3
-              variants={aboutItem}
-              initial="hidden"
-              whileInView="visible"
-            >
-              About Me
-            </motion.h3>
-            <motion.h1
-              className="mb-5"
-              variants={aboutItem}
-              initial="hidden"
-              whileInView="visible"
-            >
-              I'm Shane Enriquez<br></br> a Web Developer
-            </motion.h1>
-            <motion.p
-              className="mb-5"
-              variants={aboutItem}
-              initial="hidden"
-              whileInView="visible"
-            >
-              I'm always eager to learn and grow, constantly seeking new
-              challenges and opportunities to push my boundaries and contribute
-              to meaningful projects. Whether you're looking for a skilled
-              developer to bring your vision to life or a passionate
-              collaborator to join your team, I'm confident in my ability to
-              deliver exceptional results.
-            </motion.p>
-            <ul className="about-list d-flex flex-wrap w-100 mb-4">
-              <motion.li
-                variants={aboutItem}
-                initial="hidden"
-                whileInView="visible"
-              >
-                Shane F. Enriquez
-              </motion.li>
-              <motion.li
-                variants={aboutItem}
-                initial="hidden"
-                whileInView="visible"
-              >
-                shaneenriquez50gmail.com
-              </motion.li>
-              <motion.li
-                variants={aboutItem}
-                initial="hidden"
-                whileInView="visible"
-              >
-                Tibungco, Davao City
-              </motion.li>
-              <motion.li
-                variants={aboutItem}
-                initial="hidden"
-                whileInView="visible"
-              >
-                0991-373-1732
-              </motion.li>
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="col-lg-8"
+          >
+            <p className="eyebrow">About</p>
+            <h1>Building reliable web products, end to end.</h1>
+            <p>
+              I'm a full-stack developer working mainly with React and
+              Laravel. Over the past few years I've built and maintained
+              enterprise systems, inventory and queue-management platforms,
+              admin dashboards, and public-facing business websites,
+              handling everything from responsive front-end interfaces to
+              the Laravel REST APIs behind them.
+            </p>
+            <p>
+              I care about writing code that's easy to maintain and
+              interfaces that are genuinely easy to use, and I enjoy working
+              closely with the people who'll actually use what I build.
+            </p>
+            <ul className="about-facts">
+              <li>
+                <strong>Location</strong>
+                <span className="d-flex align-items-center gap-1">
+                  <MdOutlineLocationOn /> Davao City, Philippines
+                </span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:shaneenriquez50@gmail.com">
+                  <MdOutlineEmail /> shaneenriquez50@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong>Availability</strong>
+                <span>Open to full-stack roles &amp; freelance work</span>
+              </li>
             </ul>
-            <div className="d-flex gap-4 about-links align-items-center justify-content-between">
-              <Downloadcv />
-              <motion.strong
-                variants={aboutItem}
-                initial="hidden"
-                whileInView="visible"
-              >
-                <HiOutlineChevronDoubleRight className="arrow-left" />
-              </motion.strong>
-              <p className="mb-0">Follow me</p>
-              <ul className="list-unstyled about-socmed justify-content-between mb-0 gap-5">
-                <motion.li
-                  variants={aboutItem}
-                  initial="hidden"
-                  whileInView="visible"
-                >
-                  <a href="https://github.com/shanepai-14" target="_blank">
-                    {" "}
-                    <Github color="black" size={28} />
-                  </a>
-                </motion.li>
-                <motion.li
-                  variants={aboutItem}
-                  initial="hidden"
-                  whileInView="visible"
-                >
-                  <a
-                    href="https://www.motion.linkedin.com/in/shane-enriquez-2927a1254/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <Linkedin color="#0C64C5" size={28} />
-                  </a>
-                </motion.li>
-                <motion.li
-                  variants={aboutItem}
-                  initial="hidden"
-                  whileInView="visible"
-                >
-                  <a href="https://www.facebook.com/pee.poy.98" target="_blank">
-                    {" "}
-                    <Facebook color="#0866FF" size={28} />
-                  </a>
-                </motion.li>
-              </ul>
-            </div>
           </motion.div>
         </div>
       </div>
@@ -144,4 +69,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
