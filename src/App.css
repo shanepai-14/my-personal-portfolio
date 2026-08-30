@@ -22,6 +22,7 @@
 
 body {
   /* font-family: "Work Sans", sans-serif !important; */
+  overflow-x: hidden;
 }
 .header {
   position: fixed !important;
@@ -645,6 +646,9 @@ footer {
   }
   .footer {
     padding-top: 0px;
+  }
+  .project-sec {
+    margin-bottom: 0;
   }
   .about-list li {
     width: 100%;
